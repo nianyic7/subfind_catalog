@@ -1,0 +1,3437 @@
+/var/spool/slurmd/job186646/slurm_script: line 9: activate: No such file or directory
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+created file: /hildafs/home/nianyic/scratch1/test_bigfile
+rank 12, iteration 80, start
+rank 17, iteration 80, start
+rank 16, iteration 80, start
+rank 20, iteration 80, start
+rank 40, iteration 80, start
+rank 41, iteration 80, start
+rank 44, iteration 80, start
+rank 45, iteration 80, start
+rank 36, iteration 80, start
+rank 19, iteration 80, start
+rank 18, iteration 80, start
+rank 38, iteration 80, start
+rank 39, iteration 80, start
+rank 46, iteration 80, start
+rank 47, iteration 80, start
+rank 37, iteration 80, start
+rank 42, iteration 80, start
+rank 43, iteration 80, start
+rank 14, iteration 80, start
+rank 15, iteration 80, start
+rank 22, iteration 80, start
+rank 23, iteration 80, start
+rank 21, iteration 80, start
+rank 13, iteration 80, start
+rank 0, iteration 80, start
+rank 1, iteration 80, start
+rank 8, iteration 80, start
+rank 2, iteration 80, start
+rank 3, iteration 80, start
+rank 28, iteration 80, start
+rank 29, iteration 80, start
+rank 32, iteration 80, start
+rank 33, iteration 80, start
+rank 48, iteration 80, start
+rank 50, iteration 80, start
+rank 10, iteration 80, start
+rank 11, iteration 80, start
+rank 9, iteration 80, start
+rank 49, iteration 80, start
+rank 34, iteration 80, start
+rank 35, iteration 80, start
+rank 24, iteration 80, start
+rank 4, iteration 80, start
+rank 5, iteration 80, start
+rank 6, iteration 80, start
+rank 52, iteration 80, start
+rank 51, iteration 80, start
+rank 26, iteration 80, start
+rank 27, iteration 80, start
+rank 30, iteration 80, start
+rank 54, iteration 80, start
+rank 55, iteration 80, start
+rank 7, iteration 80, start
+rank 25, iteration 80, start
+rank 53, iteration 80, start
+rank 31, iteration 80, start
+Finished writing: 98000000
+rank 9, iteration 80, end
+Finished writing: 498000000
+rank 49, iteration 80, end
+Finished writing: 248000000
+rank 24, iteration 80, end
+Finished writing: 448000000
+rank 44, iteration 80, end
+Finished writing: 88000000
+rank 8, iteration 80, end
+Finished writing: 138000000
+rank 13, iteration 80, end
+Finished writing: 418000000
+rank 41, iteration 80, end
+Finished writing: 458000000
+rank 45, iteration 80, end
+Finished writing: 208000000
+rank 20, iteration 80, end
+Finished writing: 128000000
+rank 12, iteration 80, end
+Finished writing: 158000000
+Finished writing: 238000000
+rank 23, iteration 80, end
+rank 15, iteration 80, end
+Finished writing: 148000000
+rank 14, iteration 80, end
+Finished writing: 328000000
+rank 32, iteration 80, end
+Finished writing: 8000000
+rank 0, iteration 80, end
+Finished writing: 168000000
+rank 16, iteration 80, end
+Finished writing: 558000000
+rank 55, iteration 80, end
+Finished writing: 408000000
+rank 40, iteration 80, end
+Finished writing: 338000000
+rank 33, iteration 80, end
+Finished writing: 228000000
+rank 22, iteration 80, end
+Finished writing: 318000000
+rank 31, iteration 80, end
+Finished writing: 518000000
+rank 51, iteration 80, end
+Finished writing: 38000000
+rank 3, iteration 80, end
+Finished writing: 18000000
+rank 1, iteration 80, end
+Finished writing: 278000000
+rank 27, iteration 80, end
+Finished writing: 288000000
+rank 28, iteration 80, end
+Finished writing: 468000000
+Finished writing: 478000000
+rank 47, iteration 80, end
+Finished writing: 368000000
+rank 36, iteration 80, end
+rank 46, iteration 80, end
+Finished writing: 68000000
+rank 6, iteration 80, end
+Finished writing: 298000000
+rank 29, iteration 80, end
+Finished writing: 488000000
+rank 48, iteration 80, end
+Finished writing: 538000000
+rank 53, iteration 80, end
+Finished writing: 178000000
+rank 17, iteration 80, end
+Finished writing: 308000000
+rank 30, iteration 80, end
+Finished writing: 358000000
+rank 35, iteration 80, end
+Finished writing: 528000000
+rank 52, iteration 80, end
+Finished writing: 428000000
+rank 42, iteration 80, end
+Finished writing: 28000000
+rank 2, iteration 80, end
+Finished writing: 268000000
+rank 26, iteration 80, end
+Finished writing: 218000000
+rank 21, iteration 80, end
+Finished writing: 388000000
+rank 38, iteration 80, end
+Finished writing: 188000000
+rank 18, iteration 80, end
+Finished writing: 438000000
+rank 43, iteration 80, end
+Finished writing: 78000000
+rank 7, iteration 80, end
+Finished writing: 198000000
+rank 19, iteration 80, end
+Finished writing: 258000000
+rank 25, iteration 80, end
+Finished writing: 398000000
+rank 39, iteration 80, end
+Finished writing: 48000000
+rank 4, iteration 80, end
+Finished writing: 58000000
+rank 5, iteration 80, end
+Finished writing: 118000000
+rank 11, iteration 80, end
+Finished writing: 348000000
+rank 34, iteration 80, end
+Finished writing: 548000000
+rank 54, iteration 80, end
+Finished writing: 508000000
+rank 50, iteration 80, end
+Finished writing: 108000000
+rank 10, iteration 80, end
+Finished writing: 378000000
+rank 37, iteration 80, end
+-------------- iteration done ------------, 80
+rank 0, iteration 81, start
+rank 12, iteration 81, start
+rank 13, iteration 81, start
+rank 14, iteration 81, start
+rank 15, iteration 81, start
+rank 16, iteration 81, start
+rank 17, iteration 81, start
+rank 20, iteration 81, start
+rank 22, iteration 81, start
+rank 23, iteration 81, start
+rank 8, iteration 81, start
+rank 9, iteration 81, start
+rank 24, iteration 81, start
+rank 28, iteration 81, start
+rank 30, iteration 81, start
+rank 32, iteration 81, start
+rank 10, iteration 81, start
+rank 11, iteration 81, start
+rank 25, iteration 81, start
+rank 4, iteration 81, start
+rank 33, iteration 81, start
+rank 26, iteration 81, start
+rank 27, iteration 81, start
+rank 21, iteration 81, start
+rank 36, iteration 81, start
+rank 40, iteration 81, start
+rank 42, iteration 81, start
+rank 44, iteration 81, start
+rank 45, iteration 81, start
+rank 46, iteration 81, start
+rank 47, iteration 81, start
+rank 48, iteration 81, start
+rank 52, iteration 81, start
+rank 6, iteration 81, start
+rank 7, iteration 81, start
+rank 2, iteration 81, start
+rank 3, iteration 81, start
+rank 53, iteration 81, start
+rank 38, iteration 81, start
+rank 43, iteration 81, start
+rank 29, iteration 81, start
+rank 54, iteration 81, start
+rank 37, iteration 81, start
+rank 49, iteration 81, start
+rank 18, iteration 81, start
+rank 31, iteration 81, start
+rank 1, iteration 81, start
+rank 34, iteration 81, start
+rank 5, iteration 81, start
+rank 55, iteration 81, start
+rank 39, iteration 81, start
+rank 41, iteration 81, start
+rank 50, iteration 81, start
+rank 19, iteration 81, start
+rank 35, iteration 81, start
+rank 51, iteration 81, start
+Finished writing: 548100000
+rank 54, iteration 81, end
+Finished writing: 288100000
+rank 28, iteration 81, end
+Finished writing: 388100000
+rank 38, iteration 81, end
+Finished writing: 338100000
+rank 33, iteration 81, end
+Finished writing: 558100000
+rank 55, iteration 81, end
+Finished writing: 78100000
+Finished writing: 518100000
+rank 51, iteration 81, end
+rank 7, iteration 81, end
+Finished writing: 98100000
+rank 9, iteration 81, end
+Finished writing: 188100000
+rank 18, iteration 81, end
+Finished writing: 228100000
+rank 22, iteration 81, end
+Finished writing: 278100000
+rank 27, iteration 81, end
+Finished writing: 418100000
+rank 41, iteration 81, end
+Finished writing: 268100000
+rank 26, iteration 81, end
+Finished writing: 448100000
+rank 44, iteration 81, end
+Finished writing: 118100000
+rank 11, iteration 81, end
+Finished writing: 468100000
+rank 46, iteration 81, end
+Finished writing: 58100000
+rank 5, iteration 81, end
+Finished writing: 378100000
+rank 37, iteration 81, end
+Finished writing: 528100000
+rank 52, iteration 81, end
+Finished writing: 148100000
+rank 14, iteration 81, end
+Finished writing: 478100000
+rank 47, iteration 81, end
+Finished writing: 428100000
+rank 42, iteration 81, end
+Finished writing: 158100000
+rank 15, iteration 81, end
+Finished writing: 238100000
+rank 23, iteration 81, end
+Finished writing: 318100000
+rank 31, iteration 81, end
+Finished writing: 348100000
+rank 34, iteration 81, end
+Finished writing: 508100000
+rank 50, iteration 81, end
+Finished writing: 218100000
+rank 21, iteration 81, end
+Finished writing: 398100000
+rank 39, iteration 81, end
+Finished writing: 18100000
+rank 1, iteration 81, end
+Finished writing: 108100000
+rank 10, iteration 81, end
+Finished writing: 248100000
+rank 24, iteration 81, end
+Finished writing: 178100000
+rank 17, iteration 81, end
+Finished writing: 88100000
+rank 8, iteration 81, end
+Finished writing: 368100000
+rank 36, iteration 81, end
+Finished writing: 408100000
+rank 40, iteration 81, end
+Finished writing: 458100000
+rank 45, iteration 81, end
+Finished writing: 198100000
+rank 19, iteration 81, end
+Finished writing: 128100000
+rank 12, iteration 81, end
+Finished writing: 28100000
+rank 2, iteration 81, end
+Finished writing: 68100000
+rank 6, iteration 81, end
+Finished writing: 298100000
+rank 29, iteration 81, end
+Finished writing: 328100000
+rank 32, iteration 81, end
+Finished writing: 208100000
+rank 20, iteration 81, end
+Finished writing: 438100000
+rank 43, iteration 81, end
+Finished writing: 138100000
+rank 13, iteration 81, end
+Finished writing: 258100000
+rank 25, iteration 81, end
+Finished writing: 168100000
+rank 16, iteration 81, end
+Finished writing: 48100000
+rank 4, iteration 81, end
+Finished writing: 308100000
+rank 30, iteration 81, end
+Finished writing: 358100000
+rank 35, iteration 81, end
+Finished writing: 488100000
+rank 48, iteration 81, end
+Finished writing: 498100000
+rank 49, iteration 81, end
+Finished writing: 538100000
+rank 53, iteration 81, end
+Finished writing: 8100000
+rank 0, iteration 81, end
+Finished writing: 38100000
+rank 3, iteration 81, end
+-------------- iteration done ------------, 81
+rank 12, iteration 82, start
+rank 13, iteration 82, start
+rank 14, iteration 82, start
+rank 40, iteration 82, start
+rank 41, iteration 82, start
+rank 42, iteration 82, start
+rank 20, iteration 82, start
+rank 22, iteration 82, start
+rank 23, iteration 82, start
+rank 44, iteration 82, start
+rank 0, iteration 82, start
+rank 4, iteration 82, start
+rank 5, iteration 82, start
+rank 28, iteration 82, start
+rank 15, iteration 82, start
+rank 16, iteration 82, start
+rank 43, iteration 82, start
+rank 46, iteration 82, start
+rank 47, iteration 82, start
+rank 6, iteration 82, start
+rank 7, iteration 82, start
+rank 17, iteration 82, start
+rank 18, iteration 82, start
+rank 36, iteration 82, start
+rank 37, iteration 82, start
+rank 38, iteration 82, start
+rank 45, iteration 82, start
+rank 2, iteration 82, start
+rank 1, iteration 82, start
+rank 3, iteration 82, start
+rank 8, iteration 82, start
+rank 9, iteration 82, start
+rank 29, iteration 82, start
+rank 32, iteration 82, start
+rank 33, iteration 82, start
+rank 21, iteration 82, start
+rank 19, iteration 82, start
+rank 48, iteration 82, start
+rank 50, iteration 82, start
+rank 51, iteration 82, start
+rank 24, iteration 82, start
+rank 39, iteration 82, start
+rank 52, iteration 82, start
+rank 54, iteration 82, start
+rank 55, iteration 82, start
+rank 25, iteration 82, start
+rank 34, iteration 82, start
+rank 53, iteration 82, start
+rank 30, iteration 82, start
+rank 10, iteration 82, start
+rank 49, iteration 82, start
+rank 26, iteration 82, start
+rank 27, iteration 82, start
+rank 31, iteration 82, start
+rank 11, iteration 82, start
+rank 35, iteration 82, start
+Finished writing: 548200000
+rank 54, iteration 82, end
+Finished writing: 478200000
+rank 47, iteration 82, end
+Finished writing: 218200000
+rank 21, iteration 82, end
+Finished writing: 388200000
+rank 38, iteration 82, end
+Finished writing: 78200000
+rank 7, iteration 82, end
+Finished writing: 428200000
+rank 42, iteration 82, end
+Finished writing: 118200000
+rank 11, iteration 82, end
+Finished writing: 108200000
+rank 10, iteration 82, end
+Finished writing: 378200000
+rank 37, iteration 82, end
+Finished writing: 468200000
+rank 46, iteration 82, end
+Finished writing: 278200000
+rank 27, iteration 82, end
+Finished writing: 448200000
+rank 44, iteration 82, end
+Finished writing: 8200000
+rank 0, iteration 82, end
+Finished writing: 558200000
+rank 55, iteration 82, end
+Finished writing: 128200000
+rank 12, iteration 82, end
+Finished writing: 208200000
+rank 20, iteration 82, end
+Finished writing: 68200000
+rank 6, iteration 82, end
+Finished writing: 438200000
+rank 43, iteration 82, end
+Finished writing: 28200000
+rank 2, iteration 82, end
+Finished writing: 398200000
+rank 39, iteration 82, end
+Finished writing: 508200000
+rank 50, iteration 82, end
+Finished writing: 198200000
+rank 19, iteration 82, end
+Finished writing: 528200000
+rank 52, iteration 82, end
+Finished writing: 248200000
+rank 24, iteration 82, end
+Finished writing: 348200000
+rank 34, iteration 82, end
+Finished writing: 408200000
+rank 40, iteration 82, end
+Finished writing: 58200000
+rank 5, iteration 82, end
+Finished writing: 168200000
+rank 16, iteration 82, end
+Finished writing: 228200000
+rank 22, iteration 82, end
+Finished writing: 138200000
+rank 13, iteration 82, end
+Finished writing: 188200000
+rank 18, iteration 82, end
+Finished writing: 368200000
+rank 36, iteration 82, end
+Finished writing: 178200000
+Finished writing: 158200000
+rank 17, iteration 82, end
+rank 15, iteration 82, end
+Finished writing: 238200000
+rank 23, iteration 82, end
+Finished writing: 48200000
+rank 4, iteration 82, end
+Finished writing: 318200000
+rank 31, iteration 82, end
+Finished writing: 418200000
+rank 41, iteration 82, end
+Finished writing: 148200000
+rank 14, iteration 82, end
+Finished writing: 338200000
+rank 33, iteration 82, end
+Finished writing: 98200000
+rank 9, iteration 82, end
+Finished writing: 298200000
+rank 29, iteration 82, end
+Finished writing: 458200000
+rank 45, iteration 82, end
+Finished writing: 358200000
+rank 35, iteration 82, end
+Finished writing: 258200000
+rank 25, iteration 82, end
+Finished writing: 18200000
+rank 1, iteration 82, end
+Finished writing: 268200000
+rank 26, iteration 82, end
+Finished writing: 308200000
+rank 30, iteration 82, end
+Finished writing: 488200000
+rank 48, iteration 82, end
+Finished writing: 518200000
+rank 51, iteration 82, end
+Finished writing: 538200000
+rank 53, iteration 82, end
+Finished writing: 38200000
+rank 3, iteration 82, end
+Finished writing: 88200000
+rank 8, iteration 82, end
+Finished writing: 288200000
+rank 28, iteration 82, end
+Finished writing: 328200000
+rank 32, iteration 82, end
+Finished writing: 498200000
+rank 49, iteration 82, end
+-------------- iteration done ------------, 82
+rank 0, iteration 83, start
+rank 2, iteration 83, start
+rank 4, iteration 83, start
+rank 8, iteration 83, start
+rank 9, iteration 83, start
+rank 10, iteration 83, start
+rank 11, iteration 83, start
+rank 1, iteration 83, start
+rank 5, iteration 83, start
+rank 12, iteration 83, start
+rank 13, iteration 83, start
+rank 20, iteration 83, start
+rank 40, iteration 83, start
+rank 42, iteration 83, start
+rank 43, iteration 83, start
+rank 21, iteration 83, start
+rank 28, iteration 83, start
+rank 29, iteration 83, start
+rank 3, iteration 83, start
+rank 6, iteration 83, start
+rank 7, iteration 83, start
+rank 14, iteration 83, start
+rank 15, iteration 83, start
+rank 24, iteration 83, start
+rank 30, iteration 83, start
+rank 31, iteration 83, start
+rank 44, iteration 83, start
+rank 46, iteration 83, start
+rank 47, iteration 83, start
+rank 26, iteration 83, start
+rank 32, iteration 83, start
+rank 41, iteration 83, start
+rank 45, iteration 83, start
+rank 25, iteration 83, start
+rank 22, iteration 83, start
+rank 48, iteration 83, start
+rank 33, iteration 83, start
+rank 16, iteration 83, start
+rank 36, iteration 83, start
+rank 38, iteration 83, start
+rank 39, iteration 83, start
+rank 27, iteration 83, start
+rank 49, iteration 83, start
+rank 37, iteration 83, start
+rank 17, iteration 83, start
+rank 34, iteration 83, start
+rank 35, iteration 83, start
+rank 18, iteration 83, start
+rank 19, iteration 83, start
+rank 23, iteration 83, start
+rank 50, iteration 83, start
+rank 52, iteration 83, start
+rank 54, iteration 83, start
+rank 55, iteration 83, start
+rank 51, iteration 83, start
+rank 53, iteration 83, start
+Finished writing: 208300000
+rank 20, iteration 83, end
+Finished writing: 128300000
+rank 12, iteration 83, end
+Finished writing: 168300000
+rank 16, iteration 83, end
+Finished writing: 408300000
+rank 40, iteration 83, end
+Finished writing: 368300000
+rank 36, iteration 83, end
+Finished writing: 198300000
+rank 19, iteration 83, end
+Finished writing: 48300000
+rank 4, iteration 83, end
+Finished writing: 88300000
+rank 8, iteration 83, end
+Finished writing: 58300000
+rank 5, iteration 83, end
+Finished writing: 458300000
+rank 45, iteration 83, end
+Finished writing: 548300000
+rank 54, iteration 83, end
+Finished writing: 148300000
+rank 14, iteration 83, end
+Finished writing: 228300000
+rank 22, iteration 83, end
+Finished writing: 248300000
+rank 24, iteration 83, end
+Finished writing: 328300000
+rank 32, iteration 83, end
+Finished writing: 488300000
+rank 48, iteration 83, end
+Finished writing: 338300000
+rank 33, iteration 83, end
+Finished writing: 8300000
+rank 0, iteration 83, end
+Finished writing: 428300000
+rank 42, iteration 83, end
+Finished writing: 468300000
+rank 46, iteration 83, end
+Finished writing: 158300000
+rank 15, iteration 83, end
+Finished writing: 528300000
+rank 52, iteration 83, end
+Finished writing: 278300000
+rank 27, iteration 83, end
+Finished writing: 258300000
+rank 25, iteration 83, end
+Finished writing: 418300000
+rank 41, iteration 83, end
+Finished writing: 68300000
+rank 6, iteration 83, end
+Finished writing: 78300000
+rank 7, iteration 83, end
+Finished writing: 98300000
+rank 9, iteration 83, end
+Finished writing: 288300000
+rank 28, iteration 83, end
+Finished writing: 498300000
+rank 49, iteration 83, end
+Finished writing: 508300000
+rank 50, iteration 83, end
+Finished writing: 448300000
+rank 44, iteration 83, end
+Finished writing: 298300000
+rank 29, iteration 83, end
+Finished writing: 308300000
+rank 30, iteration 83, end
+Finished writing: 218300000
+rank 21, iteration 83, end
+Finished writing: 138300000
+rank 13, iteration 83, end
+Finished writing: 358300000
+rank 35, iteration 83, end
+Finished writing: 518300000
+rank 51, iteration 83, end
+Finished writing: 478300000
+rank 47, iteration 83, end
+Finished writing: 238300000
+rank 23, iteration 83, end
+Finished writing: 438300000
+Finished writing: 398300000
+rank 39, iteration 83, end
+rank 43, iteration 83, end
+Finished writing: 18300000
+rank 1, iteration 83, end
+Finished writing: 28300000
+rank 2, iteration 83, end
+Finished writing: 108300000
+rank 10, iteration 83, end
+Finished writing: 268300000
+rank 26, iteration 83, end
+Finished writing: 558300000
+rank 55, iteration 83, end
+Finished writing: 388300000
+rank 38, iteration 83, end
+Finished writing: 538300000
+rank 53, iteration 83, end
+Finished writing: 118300000
+rank 11, iteration 83, end
+Finished writing: 38300000
+rank 3, iteration 83, end
+Finished writing: 318300000
+rank 31, iteration 83, end
+Finished writing: 188300000
+rank 18, iteration 83, end
+Finished writing: 348300000
+rank 34, iteration 83, end
+Finished writing: 378300000
+rank 37, iteration 83, end
+Finished writing: 178300000
+rank 17, iteration 83, end
+-------------- iteration done ------------, 83
+rank 0, iteration 84, start
+rank 13, iteration 84, start
+rank 14, iteration 84, start
+rank 16, iteration 84, start
+rank 20, iteration 84, start
+rank 22, iteration 84, start
+rank 23, iteration 84, start
+rank 40, iteration 84, start
+rank 42, iteration 84, start
+rank 12, iteration 84, start
+rank 5, iteration 84, start
+rank 4, iteration 84, start
+rank 8, iteration 84, start
+rank 1, iteration 84, start
+rank 41, iteration 84, start
+rank 36, iteration 84, start
+rank 28, iteration 84, start
+rank 32, iteration 84, start
+rank 48, iteration 84, start
+rank 52, iteration 84, start
+rank 53, iteration 84, start
+rank 54, iteration 84, start
+rank 44, iteration 84, start
+rank 46, iteration 84, start
+rank 33, iteration 84, start
+rank 55, iteration 84, start
+rank 10, iteration 84, start
+rank 15, iteration 84, start
+rank 37, iteration 84, start
+rank 24, iteration 84, start
+rank 45, iteration 84, start
+rank 25, iteration 84, start
+rank 6, iteration 84, start
+rank 21, iteration 84, start
+rank 30, iteration 84, start
+rank 9, iteration 84, start
+rank 31, iteration 84, start
+rank 11, iteration 84, start
+rank 17, iteration 84, start
+rank 29, iteration 84, start
+rank 34, iteration 84, start
+rank 35, iteration 84, start
+rank 43, iteration 84, start
+rank 50, iteration 84, start
+rank 7, iteration 84, start
+rank 49, iteration 84, start
+rank 38, iteration 84, start
+rank 39, iteration 84, start
+rank 26, iteration 84, start
+rank 18, iteration 84, start
+rank 19, iteration 84, start
+rank 47, iteration 84, start
+rank 2, iteration 84, start
+rank 3, iteration 84, start
+rank 51, iteration 84, start
+rank 27, iteration 84, start
+Finished writing: 218400000
+rank 21, iteration 84, end
+Finished writing: 158400000
+rank 15, iteration 84, end
+Finished writing: 58400000
+rank 5, iteration 84, end
+Finished writing: 118400000
+rank 11, iteration 84, end
+Finished writing: 458400000
+rank 45, iteration 84, end
+Finished writing: 478400000
+rank 47, iteration 84, end
+Finished writing: 278400000
+rank 27, iteration 84, end
+Finished writing: 148400000
+rank 14, iteration 84, end
+Finished writing: 528400000
+rank 52, iteration 84, end
+Finished writing: 198400000
+rank 19, iteration 84, end
+Finished writing: 268400000
+rank 26, iteration 84, end
+Finished writing: 48400000
+rank 4, iteration 84, end
+Finished writing: 128400000
+rank 12, iteration 84, end
+Finished writing: 488400000
+rank 48, iteration 84, end
+Finished writing: 418400000
+rank 41, iteration 84, end
+Finished writing: 78400000
+rank 7, iteration 84, end
+Finished writing: 138400000
+rank 13, iteration 84, end
+Finished writing: 248400000
+rank 24, iteration 84, end
+Finished writing: 228400000
+rank 22, iteration 84, end
+Finished writing: 558400000
+rank 55, iteration 84, end
+Finished writing: 388400000
+rank 38, iteration 84, end
+Finished writing: 238400000
+rank 23, iteration 84, end
+Finished writing: 288400000
+rank 28, iteration 84, end
+Finished writing: 298400000
+rank 29, iteration 84, end
+Finished writing: 548400000
+rank 54, iteration 84, end
+Finished writing: 398400000
+rank 39, iteration 84, end
+Finished writing: 108400000
+rank 10, iteration 84, end
+Finished writing: 98400000
+rank 9, iteration 84, end
+Finished writing: 308400000
+rank 30, iteration 84, end
+Finished writing: 518400000
+rank 51, iteration 84, end
+Finished writing: 38400000
+rank 3, iteration 84, end
+Finished writing: 168400000
+rank 16, iteration 84, end
+Finished writing: 208400000
+rank 20, iteration 84, end
+Finished writing: 378400000
+rank 37, iteration 84, end
+Finished writing: 408400000
+rank 40, iteration 84, end
+Finished writing: 448400000
+Finished writing: 438400000
+rank 44, iteration 84, end
+rank 43, iteration 84, end
+Finished writing: 468400000
+rank 46, iteration 84, end
+Finished writing: 88400000
+rank 8, iteration 84, end
+Finished writing: 18400000
+rank 1, iteration 84, end
+Finished writing: 338400000
+rank 33, iteration 84, end
+Finished writing: 348400000
+rank 34, iteration 84, end
+Finished writing: 258400000
+rank 25, iteration 84, end
+Finished writing: 178400000
+rank 17, iteration 84, end
+Finished writing: 188400000
+rank 18, iteration 84, end
+Finished writing: 368400000
+rank 36, iteration 84, end
+Finished writing: 428400000
+rank 42, iteration 84, end
+Finished writing: 8400000
+rank 0, iteration 84, end
+Finished writing: 28400000
+rank 2, iteration 84, end
+Finished writing: 328400000
+rank 32, iteration 84, end
+Finished writing: 358400000
+rank 35, iteration 84, end
+Finished writing: 498400000
+rank 49, iteration 84, end
+Finished writing: 508400000
+rank 50, iteration 84, end
+Finished writing: 538400000
+rank 53, iteration 84, end
+Finished writing: 318400000
+rank 31, iteration 84, end
+Finished writing: 68400000
+rank 6, iteration 84, end
+-------------- iteration done ------------, 84
+rank 0, iteration 85, start
+rank 12, iteration 85, start
+rank 13, iteration 85, start
+rank 20, iteration 85, start
+rank 22, iteration 85, start
+rank 21, iteration 85, start
+rank 4, iteration 85, start
+rank 28, iteration 85, start
+rank 32, iteration 85, start
+rank 5, iteration 85, start
+rank 23, iteration 85, start
+rank 36, iteration 85, start
+rank 37, iteration 85, start
+rank 38, iteration 85, start
+rank 40, iteration 85, start
+rank 29, iteration 85, start
+rank 14, iteration 85, start
+rank 15, iteration 85, start
+rank 2, iteration 85, start
+rank 3, iteration 85, start
+rank 39, iteration 85, start
+rank 33, iteration 85, start
+rank 44, iteration 85, start
+rank 45, iteration 85, start
+rank 46, iteration 85, start
+rank 47, iteration 85, start
+rank 8, iteration 85, start
+rank 9, iteration 85, start
+rank 10, iteration 85, start
+rank 11, iteration 85, start
+rank 24, iteration 85, start
+rank 16, iteration 85, start
+rank 18, iteration 85, start
+rank 19, iteration 85, start
+rank 6, iteration 85, start
+rank 34, iteration 85, start
+rank 25, iteration 85, start
+rank 1, iteration 85, start
+rank 26, iteration 85, start
+rank 27, iteration 85, start
+rank 35, iteration 85, start
+rank 41, iteration 85, start
+rank 42, iteration 85, start
+rank 30, iteration 85, start
+rank 17, iteration 85, start
+rank 48, iteration 85, start
+rank 52, iteration 85, start
+rank 7, iteration 85, start
+rank 43, iteration 85, start
+rank 49, iteration 85, start
+rank 54, iteration 85, start
+rank 50, iteration 85, start
+rank 31, iteration 85, start
+rank 53, iteration 85, start
+rank 51, iteration 85, start
+rank 55, iteration 85, start
+Finished writing: 218500000
+rank 21, iteration 85, end
+Finished writing: 138500000
+rank 13, iteration 85, end
+Finished writing: 458500000
+rank 45, iteration 85, end
+Finished writing: 158500000
+rank 15, iteration 85, end
+Finished writing: 198500000
+rank 19, iteration 85, end
+Finished writing: 68500000
+rank 6, iteration 85, end
+Finished writing: 258500000
+rank 25, iteration 85, end
+Finished writing: 268500000
+rank 26, iteration 85, end
+Finished writing: 298500000
+rank 29, iteration 85, end
+Finished writing: 498500000
+rank 49, iteration 85, end
+Finished writing: 38500000
+rank 3, iteration 85, end
+Finished writing: 348500000
+rank 34, iteration 85, end
+Finished writing: 18500000
+Finished writing: 528500000
+rank 52, iteration 85, end
+rank 1, iteration 85, end
+Finished writing: 278500000
+rank 27, iteration 85, end
+Finished writing: 398500000
+rank 39, iteration 85, end
+Finished writing: 418500000
+rank 41, iteration 85, end
+Finished writing: 538500000
+rank 53, iteration 85, end
+Finished writing: 228500000
+rank 22, iteration 85, end
+Finished writing: 518500000
+rank 51, iteration 85, end
+Finished writing: 368500000
+rank 36, iteration 85, end
+Finished writing: 448500000
+rank 44, iteration 85, end
+Finished writing: 408500000
+Finished writing: 168500000
+rank 16, iteration 85, end
+rank 40, iteration 85, end
+Finished writing: 378500000
+rank 37, iteration 85, end
+Finished writing: 318500000
+rank 31, iteration 85, end
+Finished writing: 108500000
+rank 10, iteration 85, end
+Finished writing: 118500000
+rank 11, iteration 85, end
+Finished writing: 178500000
+rank 17, iteration 85, end
+Finished writing: 248500000
+rank 24, iteration 85, end
+Finished writing: 88500000
+rank 8, iteration 85, end
+Finished writing: 208500000
+rank 20, iteration 85, end
+Finished writing: 238500000
+rank 23, iteration 85, end
+Finished writing: 388500000
+rank 38, iteration 85, end
+Finished writing: 438500000
+rank 43, iteration 85, end
+Finished writing: 478500000
+rank 47, iteration 85, end
+Finished writing: 468500000
+rank 46, iteration 85, end
+Finished writing: 58500000
+rank 5, iteration 85, end
+Finished writing: 548500000
+rank 54, iteration 85, end
+Finished writing: 148500000
+Finished writing: 128500000
+rank 14, iteration 85, end
+rank 12, iteration 85, end
+Finished writing: 488500000
+rank 48, iteration 85, end
+Finished writing: 8500000
+rank 0, iteration 85, end
+Finished writing: 428500000
+rank 42, iteration 85, end
+Finished writing: 78500000
+rank 7, iteration 85, end
+Finished writing: 338500000
+rank 33, iteration 85, end
+Finished writing: 188500000
+rank 18, iteration 85, end
+Finished writing: 308500000
+rank 30, iteration 85, end
+Finished writing: 328500000
+rank 32, iteration 85, end
+Finished writing: 28500000
+rank 2, iteration 85, end
+Finished writing: 288500000
+rank 28, iteration 85, end
+Finished writing: 358500000
+rank 35, iteration 85, end
+Finished writing: 508500000
+rank 50, iteration 85, end
+Finished writing: 558500000
+rank 55, iteration 85, end
+Finished writing: 48500000
+rank 4, iteration 85, end
+Finished writing: 98500000
+rank 9, iteration 85, end
+-------------- iteration done ------------, 85
+rank 0, iteration 86, start
+rank 1, iteration 86, start
+rank 8, iteration 86, start
+rank 9, iteration 86, start
+rank 12, iteration 86, start
+rank 18, iteration 86, start
+rank 13, iteration 86, start
+rank 19, iteration 86, start
+rank 16, iteration 86, start
+rank 17, iteration 86, start
+rank 20, iteration 86, start
+rank 21, iteration 86, start
+rank 22, iteration 86, start
+rank 15, iteration 86, start
+rank 14, iteration 86, start
+rank 40, iteration 86, start
+rank 41, iteration 86, start
+rank 28, iteration 86, start
+rank 29, iteration 86, start
+rank 4, iteration 86, start
+rank 6, iteration 86, start
+rank 7, iteration 86, start
+rank 24, iteration 86, start
+rank 26, iteration 86, start
+rank 30, iteration 86, start
+rank 31, iteration 86, start
+rank 23, iteration 86, start
+rank 36, iteration 86, start
+rank 38, iteration 86, start
+rank 39, iteration 86, start
+rank 44, iteration 86, start
+rank 45, iteration 86, start
+rank 27, iteration 86, start
+rank 48, iteration 86, start
+rank 49, iteration 86, start
+rank 52, iteration 86, start
+rank 10, iteration 86, start
+rank 42, iteration 86, start
+rank 46, iteration 86, start
+rank 25, iteration 86, start
+rank 32, iteration 86, start
+rank 34, iteration 86, start
+rank 5, iteration 86, start
+rank 50, iteration 86, start
+rank 35, iteration 86, start
+rank 2, iteration 86, start
+rank 3, iteration 86, start
+rank 51, iteration 86, start
+rank 53, iteration 86, start
+rank 43, iteration 86, start
+rank 47, iteration 86, start
+rank 54, iteration 86, start
+rank 11, iteration 86, start
+rank 37, iteration 86, start
+rank 33, iteration 86, start
+rank 55, iteration 86, start
+Finished writing: 148600000
+rank 14, iteration 86, end
+Finished writing: 308600000
+rank 30, iteration 86, end
+Finished writing: 328600000
+rank 32, iteration 86, end
+Finished writing: 238600000
+Finished writing: 478600000
+rank 47, iteration 86, end
+rank 23, iteration 86, end
+Finished writing: 218600000
+rank 21, iteration 86, end
+Finished writing: 388600000
+rank 38, iteration 86, end
+Finished writing: 128600000
+rank 12, iteration 86, end
+Finished writing: 68600000
+rank 6, iteration 86, end
+Finished writing: 288600000
+Finished writing: 548600000
+rank 54, iteration 86, end
+rank 28, iteration 86, end
+Finished writing: 348600000
+rank 34, iteration 86, end
+Finished writing: 208600000
+rank 20, iteration 86, end
+Finished writing: 558600000
+rank 55, iteration 86, end
+Finished writing: 228600000
+rank 22, iteration 86, end
+Finished writing: 528600000
+rank 52, iteration 86, end
+Finished writing: 368600000
+rank 36, iteration 86, end
+Finished writing: 28600000
+rank 2, iteration 86, end
+Finished writing: 378600000
+rank 37, iteration 86, end
+Finished writing: 318600000
+rank 31, iteration 86, end
+Finished writing: 38600000
+rank 3, iteration 86, end
+Finished writing: 168600000
+rank 16, iteration 86, end
+Finished writing: 8600000
+rank 0, iteration 86, end
+Finished writing: 508600000
+rank 50, iteration 86, end
+Finished writing: 48600000
+rank 4, iteration 86, end
+Finished writing: 298600000
+rank 29, iteration 86, end
+Finished writing: 18600000
+rank 1, iteration 86, end
+Finished writing: 268600000
+rank 26, iteration 86, end
+Finished writing: 188600000
+rank 18, iteration 86, end
+Finished writing: 198600000
+rank 19, iteration 86, end
+Finished writing: 398600000
+rank 39, iteration 86, end
+Finished writing: 408600000
+rank 40, iteration 86, end
+Finished writing: 448600000
+rank 44, iteration 86, end
+Finished writing: 108600000
+rank 10, iteration 86, end
+Finished writing: 518600000
+rank 51, iteration 86, end
+Finished writing: 428600000
+rank 42, iteration 86, end
+Finished writing: 258600000
+rank 25, iteration 86, end
+Finished writing: 538600000
+rank 53, iteration 86, end
+Finished writing: 158600000
+rank 15, iteration 86, end
+Finished writing: 138600000
+rank 13, iteration 86, end
+Finished writing: 418600000
+rank 41, iteration 86, end
+Finished writing: 468600000
+rank 46, iteration 86, end
+Finished writing: 78600000
+rank 7, iteration 86, end
+Finished writing: 278600000
+rank 27, iteration 86, end
+Finished writing: 98600000
+rank 9, iteration 86, end
+Finished writing: 178600000
+rank 17, iteration 86, end
+Finished writing: 438600000
+rank 43, iteration 86, end
+Finished writing: 458600000
+rank 45, iteration 86, end
+Finished writing: 88600000
+rank 8, iteration 86, end
+Finished writing: 118600000
+rank 11, iteration 86, end
+Finished writing: 248600000
+rank 24, iteration 86, end
+Finished writing: 358600000
+rank 35, iteration 86, end
+Finished writing: 498600000
+rank 49, iteration 86, end
+Finished writing: 58600000
+rank 5, iteration 86, end
+Finished writing: 338600000
+rank 33, iteration 86, end
+Finished writing: 488600000
+rank 48, iteration 86, end
+-------------- iteration done ------------, 86
+rank 0, iteration 87, start
+rank 13, iteration 87, start
+rank 14, iteration 87, start
+rank 16, iteration 87, start
+rank 40, iteration 87, start
+rank 12, iteration 87, start
+rank 28, iteration 87, start
+rank 20, iteration 87, start
+rank 22, iteration 87, start
+rank 36, iteration 87, start
+rank 21, iteration 87, start
+rank 23, iteration 87, start
+rank 38, iteration 87, start
+rank 4, iteration 87, start
+rank 34, iteration 87, start
+rank 6, iteration 87, start
+rank 32, iteration 87, start
+rank 37, iteration 87, start
+rank 39, iteration 87, start
+rank 35, iteration 87, start
+rank 17, iteration 87, start
+rank 2, iteration 87, start
+rank 3, iteration 87, start
+rank 30, iteration 87, start
+rank 18, iteration 87, start
+rank 41, iteration 87, start
+rank 44, iteration 87, start
+rank 46, iteration 87, start
+rank 47, iteration 87, start
+rank 7, iteration 87, start
+rank 29, iteration 87, start
+rank 33, iteration 87, start
+rank 19, iteration 87, start
+rank 42, iteration 87, start
+rank 8, iteration 87, start
+rank 24, iteration 87, start
+rank 15, iteration 87, start
+rank 10, iteration 87, start
+rank 11, iteration 87, start
+rank 31, iteration 87, start
+rank 45, iteration 87, start
+rank 43, iteration 87, start
+rank 9, iteration 87, start
+rank 26, iteration 87, start
+rank 1, iteration 87, start
+rank 5, iteration 87, start
+rank 25, iteration 87, start
+rank 48, iteration 87, start
+rank 50, iteration 87, start
+rank 51, iteration 87, start
+rank 52, iteration 87, start
+rank 54, iteration 87, start
+rank 27, iteration 87, start
+rank 53, iteration 87, start
+rank 49, iteration 87, start
+rank 55, iteration 87, start
+Finished writing: 168700000
+rank 16, iteration 87, end
+Finished writing: 448700000
+rank 44, iteration 87, end
+Finished writing: 28700000
+rank 2, iteration 87, end
+Finished writing: 228700000
+rank 22, iteration 87, end
+Finished writing: 8700000
+rank 0, iteration 87, end
+Finished writing: 428700000
+rank 42, iteration 87, end
+Finished writing: 218700000
+rank 21, iteration 87, end
+Finished writing: 468700000
+rank 46, iteration 87, end
+Finished writing: 128700000
+rank 12, iteration 87, end
+Finished writing: 418700000
+rank 41, iteration 87, end
+Finished writing: 178700000
+rank 17, iteration 87, end
+Finished writing: 368700000
+rank 36, iteration 87, end
+Finished writing: 208700000
+rank 20, iteration 87, end
+Finished writing: 328700000
+rank 32, iteration 87, end
+Finished writing: 488700000
+rank 48, iteration 87, end
+Finished writing: 268700000
+rank 26, iteration 87, end
+Finished writing: 518700000
+rank 51, iteration 87, end
+Finished writing: 68700000
+Finished writing: 498700000
+rank 49, iteration 87, end
+rank 6, iteration 87, end
+Finished writing: 278700000
+rank 27, iteration 87, end
+Finished writing: 108700000
+rank 10, iteration 87, end
+Finished writing: 248700000
+Finished writing: 118700000
+rank 11, iteration 87, end
+Finished writing: 288700000
+rank 28, iteration 87, end
+rank 24, iteration 87, end
+Finished writing: 138700000
+rank 13, iteration 87, end
+Finished writing: 238700000
+rank 23, iteration 87, end
+Finished writing: 38700000
+rank 3, iteration 87, end
+Finished writing: 78700000
+Finished writing: 48700000
+rank 4, iteration 87, end
+rank 7, iteration 87, end
+Finished writing: 548700000
+rank 54, iteration 87, end
+Finished writing: 378700000
+rank 37, iteration 87, end
+Finished writing: 298700000
+rank 29, iteration 87, end
+Finished writing: 338700000
+rank 33, iteration 87, end
+Finished writing: 188700000
+Finished writing: 198700000
+rank 19, iteration 87, end
+Finished writing: 458700000
+rank 45, iteration 87, end
+Finished writing: 148700000
+rank 14, iteration 87, end
+rank 18, iteration 87, end
+Finished writing: 58700000
+rank 5, iteration 87, end
+Finished writing: 348700000
+rank 34, iteration 87, end
+Finished writing: 538700000
+rank 53, iteration 87, end
+Finished writing: 358700000
+rank 35, iteration 87, end
+Finished writing: 18700000
+rank 1, iteration 87, end
+Finished writing: 308700000
+rank 30, iteration 87, end
+Finished writing: 88700000
+rank 8, iteration 87, end
+Finished writing: 388700000
+rank 38, iteration 87, end
+Finished writing: 398700000
+rank 39, iteration 87, end
+Finished writing: 408700000
+rank 40, iteration 87, end
+Finished writing: 478700000
+rank 47, iteration 87, end
+Finished writing: 508700000
+rank 50, iteration 87, end
+Finished writing: 258700000
+rank 25, iteration 87, end
+Finished writing: 318700000
+rank 31, iteration 87, end
+Finished writing: 558700000
+rank 55, iteration 87, end
+Finished writing: 528700000
+rank 52, iteration 87, end
+Finished writing: 98700000
+rank 9, iteration 87, end
+Finished writing: 158700000
+rank 15, iteration 87, end
+Finished writing: 438700000
+rank 43, iteration 87, end
+-------------- iteration done ------------, 87
+rank 0, iteration 88, start
+rank 12, iteration 88, start
+rank 16, iteration 88, start
+rank 20, iteration 88, start
+rank 21, iteration 88, start
+rank 22, iteration 88, start
+rank 23, iteration 88, start
+rank 36, iteration 88, start
+rank 37, iteration 88, start
+rank 14, iteration 88, start
+rank 17, iteration 88, start
+rank 18, iteration 88, start
+rank 15, iteration 88, start
+rank 8, iteration 88, start
+rank 24, iteration 88, start
+rank 19, iteration 88, start
+rank 38, iteration 88, start
+rank 39, iteration 88, start
+rank 13, iteration 88, start
+rank 9, iteration 88, start
+rank 2, iteration 88, start
+rank 1, iteration 88, start
+rank 42, iteration 88, start
+rank 44, iteration 88, start
+rank 40, iteration 88, start
+rank 41, iteration 88, start
+rank 46, iteration 88, start
+rank 47, iteration 88, start
+rank 4, iteration 88, start
+rank 28, iteration 88, start
+rank 30, iteration 88, start
+rank 43, iteration 88, start
+rank 45, iteration 88, start
+rank 3, iteration 88, start
+rank 29, iteration 88, start
+rank 48, iteration 88, start
+rank 49, iteration 88, start
+rank 52, iteration 88, start
+rank 10, iteration 88, start
+rank 32, iteration 88, start
+rank 25, iteration 88, start
+rank 54, iteration 88, start
+rank 26, iteration 88, start
+rank 55, iteration 88, start
+rank 5, iteration 88, start
+rank 31, iteration 88, start
+rank 11, iteration 88, start
+rank 50, iteration 88, start
+rank 53, iteration 88, start
+rank 6, iteration 88, start
+rank 7, iteration 88, start
+rank 27, iteration 88, start
+rank 33, iteration 88, start
+rank 34, iteration 88, start
+rank 51, iteration 88, start
+rank 35, iteration 88, start
+Finished writing: 368800000
+rank 36, iteration 88, end
+Finished writing: 208800000
+rank 20, iteration 88, end
+Finished writing: 418800000
+rank 41, iteration 88, end
+Finished writing: 328800000
+rank 32, iteration 88, end
+Finished writing: 188800000
+rank 18, iteration 88, end
+Finished writing: 138800000
+rank 13, iteration 88, end
+Finished writing: 48800000
+rank 4, iteration 88, end
+Finished writing: 198800000
+rank 19, iteration 88, end
+Finished writing: 338800000
+rank 33, iteration 88, end
+Finished writing: 448800000
+rank 44, iteration 88, end
+Finished writing: 348800000
+rank 34, iteration 88, end
+Finished writing: 238800000
+rank 23, iteration 88, end
+Finished writing: 508800000
+rank 50, iteration 88, end
+Finished writing: 178800000
+rank 17, iteration 88, end
+Finished writing: 28800000
+rank 2, iteration 88, end
+Finished writing: 388800000
+rank 38, iteration 88, end
+Finished writing: 308800000
+rank 30, iteration 88, end
+Finished writing: 148800000
+rank 14, iteration 88, end
+Finished writing: 248800000
+rank 24, iteration 88, end
+Finished writing: 168800000
+rank 16, iteration 88, end
+Finished writing: 8800000
+Finished writing: 498800000
+rank 49, iteration 88, end
+Finished writing: 258800000
+rank 25, iteration 88, end
+Finished writing: 548800000
+rank 54, iteration 88, end
+rank 0, iteration 88, end
+Finished writing: 18800000
+rank 1, iteration 88, end
+Finished writing: 158800000
+rank 15, iteration 88, end
+Finished writing: 228800000
+rank 22, iteration 88, end
+Finished writing: 408800000
+rank 40, iteration 88, end
+Finished writing: 428800000
+rank 42, iteration 88, end
+Finished writing: 468800000
+rank 46, iteration 88, end
+Finished writing: 68800000
+rank 6, iteration 88, end
+Finished writing: 528800000
+rank 52, iteration 88, end
+Finished writing: 218800000
+rank 21, iteration 88, end
+Finished writing: 98800000
+rank 9, iteration 88, end
+Finished writing: 538800000
+rank 53, iteration 88, end
+Finished writing: 438800000
+rank 43, iteration 88, end
+Finished writing: 478800000
+rank 47, iteration 88, end
+Finished writing: 358800000
+rank 35, iteration 88, end
+Finished writing: 518800000
+rank 51, iteration 88, end
+Finished writing: 318800000
+rank 31, iteration 88, end
+Finished writing: 128800000
+rank 12, iteration 88, end
+Finished writing: 458800000
+rank 45, iteration 88, end
+Finished writing: 378800000
+rank 37, iteration 88, end
+Finished writing: 398800000
+rank 39, iteration 88, end
+Finished writing: 278800000
+rank 27, iteration 88, end
+Finished writing: 88800000
+rank 8, iteration 88, end
+Finished writing: 298800000
+rank 29, iteration 88, end
+Finished writing: 108800000
+rank 10, iteration 88, end
+Finished writing: 558800000
+rank 55, iteration 88, end
+Finished writing: 288800000
+rank 28, iteration 88, end
+Finished writing: 58800000
+rank 5, iteration 88, end
+Finished writing: 118800000
+rank 11, iteration 88, end
+Finished writing: 268800000
+rank 26, iteration 88, end
+Finished writing: 488800000
+rank 48, iteration 88, end
+Finished writing: 38800000
+rank 3, iteration 88, end
+Finished writing: 78800000
+rank 7, iteration 88, end
+-------------- iteration done ------------, 88
+rank 0, iteration 89, start
+rank 12, iteration 89, start
+rank 13, iteration 89, start
+rank 20, iteration 89, start
+rank 21, iteration 89, start
+rank 37, iteration 89, start
+rank 38, iteration 89, start
+rank 36, iteration 89, start
+rank 1, iteration 89, start
+rank 8, iteration 89, start
+rank 28, iteration 89, start
+rank 32, iteration 89, start
+rank 33, iteration 89, start
+rank 48, iteration 89, start
+rank 4, iteration 89, start
+rank 52, iteration 89, start
+rank 53, iteration 89, start
+rank 49, iteration 89, start
+rank 40, iteration 89, start
+rank 41, iteration 89, start
+rank 42, iteration 89, start
+rank 43, iteration 89, start
+rank 44, iteration 89, start
+rank 5, iteration 89, start
+rank 14, iteration 89, start
+rank 15, iteration 89, start
+rank 22, iteration 89, start
+rank 23, iteration 89, start
+rank 2, iteration 89, start
+rank 30, iteration 89, start
+rank 10, iteration 89, start
+rank 3, iteration 89, start
+rank 11, iteration 89, start
+rank 39, iteration 89, start
+rank 24, iteration 89, start
+rank 29, iteration 89, start
+rank 16, iteration 89, start
+rank 18, iteration 89, start
+rank 17, iteration 89, start
+rank 45, iteration 89, start
+rank 26, iteration 89, start
+rank 27, iteration 89, start
+rank 34, iteration 89, start
+rank 9, iteration 89, start
+rank 46, iteration 89, start
+rank 50, iteration 89, start
+rank 51, iteration 89, start
+rank 35, iteration 89, start
+rank 31, iteration 89, start
+rank 6, iteration 89, start
+rank 7, iteration 89, start
+rank 19, iteration 89, start
+rank 25, iteration 89, start
+rank 54, iteration 89, start
+rank 55, iteration 89, start
+rank 47, iteration 89, start
+Finished writing: 548900000
+rank 54, iteration 89, end
+Finished writing: 428900000
+rank 42, iteration 89, end
+Finished writing: 188900000
+rank 18, iteration 89, end
+Finished writing: 28900000
+rank 2, iteration 89, end
+Finished writing: 128900000
+rank 12, iteration 89, end
+Finished writing: 388900000
+rank 38, iteration 89, end
+Finished writing: 228900000
+rank 22, iteration 89, end
+Finished writing: 418900000
+rank 41, iteration 89, end
+Finished writing: 308900000
+rank 30, iteration 89, end
+Finished writing: 508900000
+rank 50, iteration 89, end
+Finished writing: 368900000
+rank 36, iteration 89, end
+Finished writing: 258900000
+rank 25, iteration 89, end
+Finished writing: 458900000
+rank 45, iteration 89, end
+Finished writing: 268900000
+rank 26, iteration 89, end
+Finished writing: 148900000
+rank 14, iteration 89, end
+Finished writing: 108900000
+rank 10, iteration 89, end
+Finished writing: 468900000
+rank 46, iteration 89, end
+Finished writing: 298900000
+rank 29, iteration 89, end
+Finished writing: 208900000
+rank 20, iteration 89, end
+Finished writing: 288900000
+rank 28, iteration 89, end
+Finished writing: 48900000
+Finished writing: 98900000
+rank 9, iteration 89, end
+rank 4, iteration 89, end
+Finished writing: 68900000
+rank 6, iteration 89, end
+Finished writing: 138900000
+rank 13, iteration 89, end
+Finished writing: 438900000
+rank 43, iteration 89, end
+Finished writing: 448900000
+rank 44, iteration 89, end
+Finished writing: 338900000
+rank 33, iteration 89, end
+Finished writing: 158900000
+rank 15, iteration 89, end
+Finished writing: 168900000
+rank 16, iteration 89, end
+Finished writing: 178900000
+rank 17, iteration 89, end
+Finished writing: 218900000
+rank 21, iteration 89, end
+Finished writing: 478900000
+rank 47, iteration 89, end
+Finished writing: 348900000
+rank 34, iteration 89, end
+Finished writing: 198900000
+rank 19, iteration 89, end
+Finished writing: 378900000
+rank 37, iteration 89, end
+Finished writing: 408900000
+rank 40, iteration 89, end
+Finished writing: 118900000
+rank 11, iteration 89, end
+Finished writing: 328900000
+rank 32, iteration 89, end
+Finished writing: 238900000
+rank 23, iteration 89, end
+Finished writing: 398900000
+rank 39, iteration 89, end
+Finished writing: 88900000
+rank 8, iteration 89, end
+Finished writing: 498900000
+rank 49, iteration 89, end
+Finished writing: 58900000
+rank 5, iteration 89, end
+Finished writing: 488900000
+rank 48, iteration 89, end
+Finished writing: 538900000
+rank 53, iteration 89, end
+Finished writing: 528900000
+Finished writing: 8900000
+Finished writing: 18900000
+rank 1, iteration 89, end
+rank 52, iteration 89, end
+rank 0, iteration 89, end
+Finished writing: 38900000
+rank 3, iteration 89, end
+Finished writing: 248900000
+rank 24, iteration 89, end
+Finished writing: 358900000
+rank 35, iteration 89, end
+Finished writing: 318900000
+rank 31, iteration 89, end
+Finished writing: 558900000
+rank 55, iteration 89, end
+Finished writing: 78900000
+rank 7, iteration 89, end
+Finished writing: 518900000
+rank 51, iteration 89, end
+Finished writing: 278900000
+rank 27, iteration 89, end
+-------------- iteration done ------------, 89
+rank 0, iteration 90, start
+rank 2, iteration 90, start
+rank 12, iteration 90, start
+rank 13, iteration 90, start
+rank 20, iteration 90, start
+rank 21, iteration 90, start
+rank 22, iteration 90, start
+rank 36, iteration 90, start
+rank 38, iteration 90, start
+rank 28, iteration 90, start
+rank 29, iteration 90, start
+rank 16, iteration 90, start
+rank 18, iteration 90, start
+rank 8, iteration 90, start
+rank 10, iteration 90, start
+rank 14, iteration 90, start
+rank 4, iteration 90, start
+rank 9, iteration 90, start
+rank 32, iteration 90, start
+rank 17, iteration 90, start
+rank 19, iteration 90, start
+rank 23, iteration 90, start
+rank 34, iteration 90, start
+rank 1, iteration 90, start
+rank 3, iteration 90, start
+rank 5, iteration 90, start
+rank 39, iteration 90, start
+rank 37, iteration 90, start
+rank 33, iteration 90, start
+rank 30, iteration 90, start
+rank 40, iteration 90, start
+rank 41, iteration 90, start
+rank 42, iteration 90, start
+rank 35, iteration 90, start
+rank 11, iteration 90, start
+rank 31, iteration 90, start
+rank 15, iteration 90, start
+rank 52, iteration 90, start
+rank 54, iteration 90, start
+rank 55, iteration 90, start
+rank 48, iteration 90, start
+rank 50, iteration 90, start
+rank 44, iteration 90, start
+rank 51, iteration 90, start
+rank 43, iteration 90, start
+rank 24, iteration 90, start
+rank 49, iteration 90, start
+rank 45, iteration 90, start
+rank 6, iteration 90, start
+rank 7, iteration 90, start
+rank 26, iteration 90, start
+rank 25, iteration 90, start
+rank 53, iteration 90, start
+rank 46, iteration 90, start
+rank 47, iteration 90, start
+rank 27, iteration 90, start
+Finished writing: 429000000
+rank 42, iteration 90, end
+Finished writing: 509000000
+rank 50, iteration 90, end
+Finished writing: 29000000
+rank 2, iteration 90, end
+Finished writing: 189000000
+rank 18, iteration 90, end
+Finished writing: 469000000
+rank 46, iteration 90, end
+Finished writing: 439000000
+rank 43, iteration 90, end
+Finished writing: 269000000
+rank 26, iteration 90, end
+Finished writing: 279000000
+rank 27, iteration 90, end
+Finished writing: 299000000
+rank 29, iteration 90, end
+Finished writing: 239000000
+rank 23, iteration 90, end
+Finished writing: 159000000
+rank 15, iteration 90, end
+Finished writing: 389000000
+rank 38, iteration 90, end
+Finished writing: 19000000
+rank 1, iteration 90, end
+Finished writing: 229000000
+rank 22, iteration 90, end
+Finished writing: 9000000
+rank 0, iteration 90, end
+Finished writing: 149000000
+rank 14, iteration 90, end
+Finished writing: 529000000
+rank 52, iteration 90, end
+Finished writing: 169000000
+rank 16, iteration 90, end
+Finished writing: 259000000
+rank 25, iteration 90, end
+Finished writing: 369000000
+rank 36, iteration 90, end
+Finished writing: 59000000
+rank 5, iteration 90, end
+Finished writing: 449000000
+rank 44, iteration 90, end
+Finished writing: 99000000
+rank 9, iteration 90, end
+Finished writing: 249000000
+rank 24, iteration 90, end
+Finished writing: 329000000
+rank 32, iteration 90, end
+Finished writing: 519000000
+rank 51, iteration 90, end
+Finished writing: 319000000
+rank 31, iteration 90, end
+Finished writing: 219000000
+rank 21, iteration 90, end
+Finished writing: 379000000
+rank 37, iteration 90, end
+Finished writing: 79000000
+rank 7, iteration 90, end
+Finished writing: 199000000
+rank 19, iteration 90, end
+Finished writing: 419000000
+rank 41, iteration 90, end
+Finished writing: 539000000
+rank 53, iteration 90, end
+Finished writing: 139000000
+rank 13, iteration 90, end
+Finished writing: 109000000
+rank 10, iteration 90, end
+Finished writing: 129000000
+rank 12, iteration 90, end
+Finished writing: 39000000
+rank 3, iteration 90, end
+Finished writing: 559000000
+rank 55, iteration 90, end
+Finished writing: 119000000
+rank 11, iteration 90, end
+Finished writing: 309000000
+rank 30, iteration 90, end
+Finished writing: 359000000
+rank 35, iteration 90, end
+Finished writing: 499000000
+rank 49, iteration 90, end
+Finished writing: 349000000
+rank 34, iteration 90, end
+Finished writing: 289000000
+rank 28, iteration 90, end
+Finished writing: 179000000
+rank 17, iteration 90, end
+Finished writing: 209000000
+rank 20, iteration 90, end
+Finished writing: 409000000
+rank 40, iteration 90, end
+Finished writing: 459000000
+rank 45, iteration 90, end
+Finished writing: 399000000
+rank 39, iteration 90, end
+Finished writing: 89000000
+rank 8, iteration 90, end
+Finished writing: 479000000
+rank 47, iteration 90, end
+Finished writing: 339000000
+rank 33, iteration 90, end
+Finished writing: 489000000
+rank 48, iteration 90, end
+Finished writing: 549000000
+rank 54, iteration 90, end
+Finished writing: 49000000
+rank 4, iteration 90, end
+Finished writing: 69000000
+rank 6, iteration 90, end
+-------------- iteration done ------------, 90
+rank 0, iteration 91, start
+rank 1, iteration 91, start
+rank 2, iteration 91, start
+rank 12, iteration 91, start
+rank 14, iteration 91, start
+rank 15, iteration 91, start
+rank 20, iteration 91, start
+rank 21, iteration 91, start
+rank 36, iteration 91, start
+rank 38, iteration 91, start
+rank 37, iteration 91, start
+rank 28, iteration 91, start
+rank 29, iteration 91, start
+rank 16, iteration 91, start
+rank 18, iteration 91, start
+rank 8, iteration 91, start
+rank 9, iteration 91, start
+rank 40, iteration 91, start
+rank 41, iteration 91, start
+rank 42, iteration 91, start
+rank 43, iteration 91, start
+rank 17, iteration 91, start
+rank 13, iteration 91, start
+rank 39, iteration 91, start
+rank 22, iteration 91, start
+rank 23, iteration 91, start
+rank 3, iteration 91, start
+rank 4, iteration 91, start
+rank 6, iteration 91, start
+rank 24, iteration 91, start
+rank 26, iteration 91, start
+rank 32, iteration 91, start
+rank 5, iteration 91, start
+rank 27, iteration 91, start
+rank 7, iteration 91, start
+rank 19, iteration 91, start
+rank 30, iteration 91, start
+rank 48, iteration 91, start
+rank 50, iteration 91, start
+rank 44, iteration 91, start
+rank 46, iteration 91, start
+rank 34, iteration 91, start
+rank 10, iteration 91, start
+rank 33, iteration 91, start
+rank 52, iteration 91, start
+rank 31, iteration 91, start
+rank 45, iteration 91, start
+rank 11, iteration 91, start
+rank 35, iteration 91, start
+rank 47, iteration 91, start
+rank 49, iteration 91, start
+rank 53, iteration 91, start
+rank 51, iteration 91, start
+rank 25, iteration 91, start
+rank 54, iteration 91, start
+rank 55, iteration 91, start
+Finished writing: 229100000
+rank 22, iteration 91, end
+Finished writing: 459100000
+rank 45, iteration 91, end
+Finished writing: 299100000
+rank 29, iteration 91, end
+Finished writing: 39100000
+rank 3, iteration 91, end
+Finished writing: 389100000
+rank 38, iteration 91, end
+Finished writing: 469100000
+rank 46, iteration 91, end
+Finished writing: 179100000
+rank 17, iteration 91, end
+Finished writing: 239100000
+rank 23, iteration 91, end
+Finished writing: 139100000
+rank 13, iteration 91, end
+Finished writing: 169100000
+rank 16, iteration 91, end
+Finished writing: 449100000
+rank 44, iteration 91, end
+Finished writing: 149100000
+rank 14, iteration 91, end
+Finished writing: 379100000
+Finished writing: 439100000
+rank 43, iteration 91, end
+rank 37, iteration 91, end
+Finished writing: 429100000
+rank 42, iteration 91, end
+Finished writing: 99100000
+rank 9, iteration 91, end
+Finished writing: 29100000
+rank 2, iteration 91, end
+Finished writing: 479100000
+rank 47, iteration 91, end
+Finished writing: 159100000
+rank 15, iteration 91, end
+Finished writing: 349100000
+rank 34, iteration 91, end
+Finished writing: 69100000
+rank 6, iteration 91, end
+Finished writing: 559100000
+rank 55, iteration 91, end
+Finished writing: 109100000
+rank 10, iteration 91, end
+Finished writing: 279100000
+rank 27, iteration 91, end
+Finished writing: 329100000
+Finished writing: 79100000
+rank 7, iteration 91, end
+Finished writing: 309100000
+rank 30, iteration 91, end
+rank 32, iteration 91, end
+Finished writing: 369100000
+rank 36, iteration 91, end
+Finished writing: 129100000
+rank 12, iteration 91, end
+Finished writing: 209100000
+rank 20, iteration 91, end
+Finished writing: 399100000
+rank 39, iteration 91, end
+Finished writing: 419100000
+rank 41, iteration 91, end
+Finished writing: 189100000
+rank 18, iteration 91, end
+Finished writing: 49100000
+rank 4, iteration 91, end
+Finished writing: 89100000
+rank 8, iteration 91, end
+Finished writing: 499100000
+rank 49, iteration 91, end
+Finished writing: 529100000
+rank 52, iteration 91, end
+Finished writing: 549100000
+rank 54, iteration 91, end
+Finished writing: 199100000
+rank 19, iteration 91, end
+Finished writing: 219100000
+rank 21, iteration 91, end
+Finished writing: 119100000
+rank 11, iteration 91, end
+Finished writing: 339100000
+rank 33, iteration 91, end
+Finished writing: 489100000
+rank 48, iteration 91, end
+Finished writing: 519100000
+rank 51, iteration 91, end
+Finished writing: 359100000
+rank 35, iteration 91, end
+Finished writing: 409100000
+rank 40, iteration 91, end
+Finished writing: 9100000
+rank 0, iteration 91, end
+Finished writing: 19100000
+rank 1, iteration 91, end
+Finished writing: 269100000
+rank 26, iteration 91, end
+Finished writing: 289100000
+rank 28, iteration 91, end
+Finished writing: 509100000
+rank 50, iteration 91, end
+Finished writing: 249100000
+rank 24, iteration 91, end
+Finished writing: 59100000
+rank 5, iteration 91, end
+Finished writing: 259100000
+rank 25, iteration 91, end
+Finished writing: 319100000
+rank 31, iteration 91, end
+Finished writing: 539100000
+rank 53, iteration 91, end
+-------------- iteration done ------------, 91
+rank 0, iteration 92, start
+rank 2, iteration 92, start
+rank 8, iteration 92, start
+rank 9, iteration 92, start
+rank 10, iteration 92, start
+rank 28, iteration 92, start
+rank 30, iteration 92, start
+rank 48, iteration 92, start
+rank 3, iteration 92, start
+rank 12, iteration 92, start
+rank 14, iteration 92, start
+rank 20, iteration 92, start
+rank 21, iteration 92, start
+rank 22, iteration 92, start
+rank 36, iteration 92, start
+rank 39, iteration 92, start
+rank 38, iteration 92, start
+rank 23, iteration 92, start
+rank 1, iteration 92, start
+rank 11, iteration 92, start
+rank 29, iteration 92, start
+rank 37, iteration 92, start
+rank 4, iteration 92, start
+rank 15, iteration 92, start
+rank 50, iteration 92, start
+rank 24, iteration 92, start
+rank 25, iteration 92, start
+rank 40, iteration 92, start
+rank 41, iteration 92, start
+rank 44, iteration 92, start
+rank 45, iteration 92, start
+rank 46, iteration 92, start
+rank 47, iteration 92, start
+rank 52, iteration 92, start
+rank 53, iteration 92, start
+rank 49, iteration 92, start
+rank 32, iteration 92, start
+rank 34, iteration 92, start
+rank 16, iteration 92, start
+rank 17, iteration 92, start
+rank 18, iteration 92, start
+rank 19, iteration 92, start
+rank 42, iteration 92, start
+rank 31, iteration 92, start
+rank 51, iteration 92, start
+rank 5, iteration 92, start
+rank 35, iteration 92, start
+rank 13, iteration 92, start
+rank 6, iteration 92, start
+rank 7, iteration 92, start
+rank 54, iteration 92, start
+rank 43, iteration 92, start
+rank 26, iteration 92, start
+rank 33, iteration 92, start
+rank 55, iteration 92, start
+rank 27, iteration 92, start
+Finished writing: 149200000
+rank 14, iteration 92, end
+Finished writing: 329200000
+rank 32, iteration 92, end
+Finished writing: 349200000
+rank 34, iteration 92, end
+Finished writing: 189200000
+rank 18, iteration 92, end
+Finished writing: 209200000
+rank 20, iteration 92, end
+Finished writing: 249200000
+rank 24, iteration 92, end
+Finished writing: 519200000
+rank 51, iteration 92, end
+Finished writing: 419200000
+rank 41, iteration 92, end
+Finished writing: 229200000
+rank 22, iteration 92, end
+Finished writing: 9200000
+rank 0, iteration 92, end
+Finished writing: 139200000
+rank 13, iteration 92, end
+Finished writing: 279200000
+rank 27, iteration 92, end
+Finished writing: 169200000
+rank 16, iteration 92, end
+Finished writing: 119200000
+rank 11, iteration 92, end
+Finished writing: 179200000
+rank 17, iteration 92, end
+Finished writing: 549200000
+rank 54, iteration 92, end
+Finished writing: 199200000
+rank 19, iteration 92, end
+Finished writing: 339200000
+rank 33, iteration 92, end
+Finished writing: 399200000
+rank 39, iteration 92, end
+Finished writing: 109200000
+rank 10, iteration 92, end
+Finished writing: 459200000
+rank 45, iteration 92, end
+Finished writing: 59200000
+rank 5, iteration 92, end
+Finished writing: 429200000
+rank 42, iteration 92, end
+Finished writing: 259200000
+rank 25, iteration 92, end
+Finished writing: 129200000
+rank 12, iteration 92, end
+Finished writing: 379200000
+rank 37, iteration 92, end
+Finished writing: 409200000
+rank 40, iteration 92, end
+Finished writing: 39200000
+rank 3, iteration 92, end
+Finished writing: 269200000
+rank 26, iteration 92, end
+Finished writing: 359200000
+rank 35, iteration 92, end
+Finished writing: 299200000
+rank 29, iteration 92, end
+Finished writing: 239200000
+Finished writing: 219200000
+rank 21, iteration 92, end
+rank 23, iteration 92, end
+Finished writing: 449200000
+rank 44, iteration 92, end
+Finished writing: 509200000
+Finished writing: 289200000
+rank 28, iteration 92, end
+rank 50, iteration 92, end
+Finished writing: 309200000
+rank 30, iteration 92, end
+Finished writing: 369200000
+rank 36, iteration 92, end
+Finished writing: 439200000
+rank 43, iteration 92, end
+Finished writing: 49200000
+rank 4, iteration 92, end
+Finished writing: 79200000
+rank 7, iteration 92, end
+Finished writing: 69200000
+rank 6, iteration 92, end
+Finished writing: 479200000
+rank 47, iteration 92, end
+Finished writing: 389200000
+rank 38, iteration 92, end
+Finished writing: 469200000
+rank 46, iteration 92, end
+Finished writing: 319200000
+rank 31, iteration 92, end
+Finished writing: 529200000
+Finished writing: 489200000
+rank 48, iteration 92, end
+rank 52, iteration 92, end
+Finished writing: 159200000
+rank 15, iteration 92, end
+Finished writing: 19200000
+rank 1, iteration 92, end
+Finished writing: 29200000
+rank 2, iteration 92, end
+Finished writing: 89200000
+rank 8, iteration 92, end
+Finished writing: 99200000
+rank 9, iteration 92, end
+Finished writing: 539200000
+rank 53, iteration 92, end
+Finished writing: 559200000
+rank 55, iteration 92, end
+Finished writing: 499200000
+rank 49, iteration 92, end
+-------------- iteration done ------------, 92
+rank 0, iteration 93, start
+rank 28, iteration 93, start
+rank 34, iteration 93, start
+rank 35, iteration 93, start
+rank 32, iteration 93, start
+rank 48, iteration 93, start
+rank 50, iteration 93, start
+rank 51, iteration 93, start
+rank 29, iteration 93, start
+rank 4, iteration 93, start
+rank 6, iteration 93, start
+rank 7, iteration 93, start
+rank 2, iteration 93, start
+rank 3, iteration 93, start
+rank 30, iteration 93, start
+rank 12, iteration 93, start
+rank 13, iteration 93, start
+rank 15, iteration 93, start
+rank 20, iteration 93, start
+rank 14, iteration 93, start
+rank 21, iteration 93, start
+rank 16, iteration 93, start
+rank 18, iteration 93, start
+rank 19, iteration 93, start
+rank 1, iteration 93, start
+rank 33, iteration 93, start
+rank 22, iteration 93, start
+rank 5, iteration 93, start
+rank 52, iteration 93, start
+rank 54, iteration 93, start
+rank 53, iteration 93, start
+rank 36, iteration 93, start
+rank 49, iteration 93, start
+rank 17, iteration 93, start
+rank 8, iteration 93, start
+rank 24, iteration 93, start
+rank 38, iteration 93, start
+rank 31, iteration 93, start
+rank 55, iteration 93, start
+rank 37, iteration 93, start
+rank 40, iteration 93, start
+rank 41, iteration 93, start
+rank 44, iteration 93, start
+rank 46, iteration 93, start
+rank 23, iteration 93, start
+rank 26, iteration 93, start
+rank 25, iteration 93, start
+rank 10, iteration 93, start
+rank 47, iteration 93, start
+rank 39, iteration 93, start
+rank 9, iteration 93, start
+rank 27, iteration 93, start
+rank 42, iteration 93, start
+rank 11, iteration 93, start
+rank 45, iteration 93, start
+rank 43, iteration 93, start
+Finished writing: 39300000
+rank 3, iteration 93, end
+Finished writing: 249300000
+rank 24, iteration 93, end
+Finished writing: 389300000
+rank 38, iteration 93, end
+Finished writing: 199300000
+rank 19, iteration 93, end
+Finished writing: 9300000
+rank 0, iteration 93, end
+Finished writing: 179300000
+rank 17, iteration 93, end
+Finished writing: 109300000
+rank 10, iteration 93, end
+Finished writing: 119300000
+rank 11, iteration 93, end
+Finished writing: 149300000
+rank 14, iteration 93, end
+Finished writing: 89300000
+rank 8, iteration 93, end
+Finished writing: 229300000
+rank 22, iteration 93, end
+Finished writing: 259300000
+rank 25, iteration 93, end
+Finished writing: 419300000
+rank 41, iteration 93, end
+Finished writing: 69300000
+rank 6, iteration 93, end
+Finished writing: 209300000
+rank 20, iteration 93, end
+Finished writing: 329300000
+rank 32, iteration 93, end
+Finished writing: 459300000
+rank 45, iteration 93, end
+Finished writing: 539300000
+rank 53, iteration 93, end
+Finished writing: 449300000
+rank 44, iteration 93, end
+Finished writing: 299300000
+rank 29, iteration 93, end
+Finished writing: 139300000
+rank 13, iteration 93, end
+Finished writing: 279300000
+rank 27, iteration 93, end
+Finished writing: 379300000
+rank 37, iteration 93, end
+Finished writing: 159300000
+Finished writing: 239300000
+rank 23, iteration 93, end
+Finished writing: 169300000
+rank 16, iteration 93, end
+rank 15, iteration 93, end
+Finished writing: 499300000
+rank 49, iteration 93, end
+Finished writing: 399300000
+rank 39, iteration 93, end
+Finished writing: 129300000
+Finished writing: 439300000
+rank 43, iteration 93, end
+rank 12, iteration 93, end
+Finished writing: 29300000
+rank 2, iteration 93, end
+Finished writing: 409300000
+rank 40, iteration 93, end
+Finished writing: 99300000
+rank 9, iteration 93, end
+Finished writing: 489300000
+rank 48, iteration 93, end
+Finished writing: 479300000
+rank 47, iteration 93, end
+Finished writing: 59300000
+rank 5, iteration 93, end
+Finished writing: 79300000
+rank 7, iteration 93, end
+Finished writing: 219300000
+rank 21, iteration 93, end
+Finished writing: 469300000
+rank 46, iteration 93, end
+Finished writing: 289300000
+rank 28, iteration 93, end
+Finished writing: 369300000
+rank 36, iteration 93, end
+Finished writing: 49300000
+rank 4, iteration 93, end
+Finished writing: 559300000
+rank 55, iteration 93, end
+Finished writing: 429300000
+rank 42, iteration 93, end
+Finished writing: 339300000
+rank 33, iteration 93, end
+Finished writing: 189300000
+rank 18, iteration 93, end
+Finished writing: 349300000
+rank 34, iteration 93, end
+Finished writing: 319300000
+rank 31, iteration 93, end
+Finished writing: 19300000
+rank 1, iteration 93, end
+Finished writing: 509300000
+rank 50, iteration 93, end
+Finished writing: 519300000
+rank 51, iteration 93, end
+Finished writing: 549300000
+rank 54, iteration 93, end
+Finished writing: 269300000
+rank 26, iteration 93, end
+Finished writing: 309300000
+rank 30, iteration 93, end
+Finished writing: 359300000
+rank 35, iteration 93, end
+Finished writing: 529300000
+rank 52, iteration 93, end
+-------------- iteration done ------------, 93
+rank 0, iteration 94, start
+rank 12, iteration 94, start
+rank 1, iteration 94, start
+rank 13, iteration 94, start
+rank 8, iteration 94, start
+rank 14, iteration 94, start
+rank 10, iteration 94, start
+rank 20, iteration 94, start
+rank 26, iteration 94, start
+rank 21, iteration 94, start
+rank 24, iteration 94, start
+rank 11, iteration 94, start
+rank 16, iteration 94, start
+rank 17, iteration 94, start
+rank 25, iteration 94, start
+rank 4, iteration 94, start
+rank 2, iteration 94, start
+rank 3, iteration 94, start
+rank 36, iteration 94, start
+rank 38, iteration 94, start
+rank 18, iteration 94, start
+rank 19, iteration 94, start
+rank 15, iteration 94, start
+rank 37, iteration 94, start
+rank 28, iteration 94, start
+rank 6, iteration 94, start
+rank 7, iteration 94, start
+rank 27, iteration 94, start
+rank 22, iteration 94, start
+rank 32, iteration 94, start
+rank 40, iteration 94, start
+rank 42, iteration 94, start
+rank 44, iteration 94, start
+rank 45, iteration 94, start
+rank 46, iteration 94, start
+rank 39, iteration 94, start
+rank 23, iteration 94, start
+rank 9, iteration 94, start
+rank 33, iteration 94, start
+rank 41, iteration 94, start
+rank 29, iteration 94, start
+rank 30, iteration 94, start
+rank 34, iteration 94, start
+rank 5, iteration 94, start
+rank 47, iteration 94, start
+rank 43, iteration 94, start
+rank 48, iteration 94, start
+rank 52, iteration 94, start
+rank 53, iteration 94, start
+rank 49, iteration 94, start
+rank 31, iteration 94, start
+rank 35, iteration 94, start
+rank 50, iteration 94, start
+rank 54, iteration 94, start
+rank 55, iteration 94, start
+rank 51, iteration 94, start
+Finished writing: 169400000
+rank 16, iteration 94, end
+Finished writing: 409400000
+rank 40, iteration 94, end
+Finished writing: 89400000
+rank 8, iteration 94, end
+Finished writing: 129400000
+rank 12, iteration 94, end
+Finished writing: 479400000
+rank 47, iteration 94, end
+Finished writing: 419400000
+rank 41, iteration 94, end
+Finished writing: 79400000
+rank 7, iteration 94, end
+Finished writing: 379400000
+rank 37, iteration 94, end
+Finished writing: 369400000
+rank 36, iteration 94, end
+Finished writing: 539400000
+rank 53, iteration 94, end
+Finished writing: 449400000
+rank 44, iteration 94, end
+Finished writing: 499400000
+rank 49, iteration 94, end
+Finished writing: 469400000
+rank 46, iteration 94, end
+Finished writing: 19400000
+rank 1, iteration 94, end
+Finished writing: 179400000
+rank 17, iteration 94, end
+Finished writing: 489400000
+rank 48, iteration 94, end
+Finished writing: 399400000
+rank 39, iteration 94, end
+Finished writing: 559400000
+rank 55, iteration 94, end
+Finished writing: 199400000
+rank 19, iteration 94, end
+Finished writing: 119400000
+rank 11, iteration 94, end
+Finished writing: 99400000
+rank 9, iteration 94, end
+Finished writing: 259400000
+rank 25, iteration 94, end
+Finished writing: 329400000
+rank 32, iteration 94, end
+Finished writing: 519400000
+rank 51, iteration 94, end
+Finished writing: 69400000
+Finished writing: 279400000
+rank 27, iteration 94, end
+rank 6, iteration 94, end
+Finished writing: 219400000
+rank 21, iteration 94, end
+Finished writing: 139400000
+rank 13, iteration 94, end
+Finished writing: 159400000
+rank 15, iteration 94, end
+Finished writing: 209400000
+rank 20, iteration 94, end
+Finished writing: 389400000
+rank 38, iteration 94, end
+Finished writing: 429400000
+rank 42, iteration 94, end
+Finished writing: 49400000
+rank 4, iteration 94, end
+Finished writing: 299400000
+rank 29, iteration 94, end
+Finished writing: 349400000
+rank 34, iteration 94, end
+Finished writing: 239400000
+rank 23, iteration 94, end
+Finished writing: 439400000
+rank 43, iteration 94, end
+Finished writing: 189400000
+rank 18, iteration 94, end
+Finished writing: 229400000
+rank 22, iteration 94, end
+Finished writing: 29400000
+rank 2, iteration 94, end
+Finished writing: 9400000
+Finished writing: 359400000
+rank 35, iteration 94, end
+rank 0, iteration 94, end
+Finished writing: 149400000
+rank 14, iteration 94, end
+Finished writing: 459400000
+rank 45, iteration 94, end
+Finished writing: 39400000
+rank 3, iteration 94, end
+Finished writing: 289400000
+rank 28, iteration 94, end
+Finished writing: 509400000
+rank 50, iteration 94, end
+Finished writing: 249400000
+rank 24, iteration 94, end
+Finished writing: 269400000
+rank 26, iteration 94, end
+Finished writing: 309400000
+rank 30, iteration 94, end
+Finished writing: 529400000
+rank 52, iteration 94, end
+Finished writing: 59400000
+rank 5, iteration 94, end
+Finished writing: 109400000
+rank 10, iteration 94, end
+Finished writing: 319400000
+rank 31, iteration 94, end
+Finished writing: 339400000
+rank 33, iteration 94, end
+Finished writing: 549400000
+rank 54, iteration 94, end
+-------------- iteration done ------------, 94
+rank 9, iteration 95, start
+rank 18, iteration 95, start
+rank 19, iteration 95, start
+rank 40, iteration 95, start
+rank 41, iteration 95, start
+rank 42, iteration 95, start
+rank 12, iteration 95, start
+rank 16, iteration 95, start
+rank 24, iteration 95, start
+rank 25, iteration 95, start
+rank 0, iteration 95, start
+rank 8, iteration 95, start
+rank 43, iteration 95, start
+rank 2, iteration 95, start
+rank 28, iteration 95, start
+rank 20, iteration 95, start
+rank 21, iteration 95, start
+rank 22, iteration 95, start
+rank 23, iteration 95, start
+rank 10, iteration 95, start
+rank 11, iteration 95, start
+rank 3, iteration 95, start
+rank 14, iteration 95, start
+rank 36, iteration 95, start
+rank 37, iteration 95, start
+rank 1, iteration 95, start
+rank 17, iteration 95, start
+rank 26, iteration 95, start
+rank 29, iteration 95, start
+rank 32, iteration 95, start
+rank 48, iteration 95, start
+rank 30, iteration 95, start
+rank 13, iteration 95, start
+rank 4, iteration 95, start
+rank 6, iteration 95, start
+rank 7, iteration 95, start
+rank 15, iteration 95, start
+rank 38, iteration 95, start
+rank 31, iteration 95, start
+rank 34, iteration 95, start
+rank 35, iteration 95, start
+rank 44, iteration 95, start
+rank 45, iteration 95, start
+rank 5, iteration 95, start
+rank 27, iteration 95, start
+rank 46, iteration 95, start
+rank 47, iteration 95, start
+rank 49, iteration 95, start
+rank 33, iteration 95, start
+rank 52, iteration 95, start
+rank 53, iteration 95, start
+rank 50, iteration 95, start
+rank 54, iteration 95, start
+rank 55, iteration 95, start
+rank 39, iteration 95, start
+rank 51, iteration 95, start
+Finished writing: 359500000
+rank 35, iteration 95, end
+Finished writing: 79500000
+rank 7, iteration 95, end
+Finished writing: 119500000
+rank 11, iteration 95, end
+Finished writing: 29500000
+rank 2, iteration 95, end
+Finished writing: 159500000
+rank 15, iteration 95, end
+Finished writing: 189500000
+rank 18, iteration 95, end
+Finished writing: 399500000
+rank 39, iteration 95, end
+Finished writing: 429500000
+rank 42, iteration 95, end
+Finished writing: 479500000
+rank 47, iteration 95, end
+Finished writing: 379500000
+rank 37, iteration 95, end
+Finished writing: 539500000
+rank 53, iteration 95, end
+Finished writing: 199500000
+rank 19, iteration 95, end
+Finished writing: 69500000
+rank 6, iteration 95, end
+Finished writing: 559500000
+rank 55, iteration 95, end
+Finished writing: 219500000
+rank 21, iteration 95, end
+Finished writing: 519500000
+rank 51, iteration 95, end
+Finished writing: 419500000
+rank 41, iteration 95, end
+Finished writing: 99500000
+rank 9, iteration 95, end
+Finished writing: 469500000
+rank 46, iteration 95, end
+Finished writing: 39500000
+rank 3, iteration 95, end
+Finished writing: 139500000
+rank 13, iteration 95, end
+Finished writing: 89500000
+rank 8, iteration 95, end
+Finished writing: 179500000
+rank 17, iteration 95, end
+Finished writing: 299500000
+rank 29, iteration 95, end
+Finished writing: 229500000
+rank 22, iteration 95, end
+Finished writing: 239500000
+rank 23, iteration 95, end
+Finished writing: 389500000
+rank 38, iteration 95, end
+Finished writing: 459500000
+rank 45, iteration 95, end
+Finished writing: 439500000
+rank 43, iteration 95, end
+Finished writing: 409500000
+rank 40, iteration 95, end
+Finished writing: 169500000
+rank 16, iteration 95, end
+Finished writing: 9500000
+rank 0, iteration 95, end
+Finished writing: 59500000
+rank 5, iteration 95, end
+Finished writing: 349500000
+rank 34, iteration 95, end
+Finished writing: 529500000
+rank 52, iteration 95, end
+Finished writing: 209500000
+rank 20, iteration 95, end
+Finished writing: 259500000
+rank 25, iteration 95, end
+Finished writing: 319500000
+rank 31, iteration 95, end
+Finished writing: 249500000
+rank 24, iteration 95, end
+Finished writing: 339500000
+rank 33, iteration 95, end
+Finished writing: 129500000
+rank 12, iteration 95, end
+Finished writing: 149500000
+rank 14, iteration 95, end
+Finished writing: 369500000
+rank 36, iteration 95, end
+Finished writing: 449500000
+rank 44, iteration 95, end
+Finished writing: 109500000
+rank 10, iteration 95, end
+Finished writing: 489500000
+rank 48, iteration 95, end
+Finished writing: 509500000
+rank 50, iteration 95, end
+Finished writing: 499500000
+rank 49, iteration 95, end
+Finished writing: 329500000
+rank 32, iteration 95, end
+Finished writing: 269500000
+rank 26, iteration 95, end
+Finished writing: 49500000
+rank 4, iteration 95, end
+Finished writing: 309500000
+rank 30, iteration 95, end
+Finished writing: 549500000
+rank 54, iteration 95, end
+Finished writing: 19500000
+rank 1, iteration 95, end
+Finished writing: 289500000
+rank 28, iteration 95, end
+Finished writing: 279500000
+rank 27, iteration 95, end
+-------------- iteration done ------------, 95
+rank 0, iteration 96, start
+rank 1, iteration 96, start
+rank 12, iteration 96, start
+rank 2, iteration 96, start
+rank 14, iteration 96, start
+rank 3, iteration 96, start
+rank 15, iteration 96, start
+rank 20, iteration 96, start
+rank 40, iteration 96, start
+rank 41, iteration 96, start
+rank 44, iteration 96, start
+rank 42, iteration 96, start
+rank 28, iteration 96, start
+rank 21, iteration 96, start
+rank 8, iteration 96, start
+rank 30, iteration 96, start
+rank 32, iteration 96, start
+rank 34, iteration 96, start
+rank 35, iteration 96, start
+rank 36, iteration 96, start
+rank 37, iteration 96, start
+rank 38, iteration 96, start
+rank 39, iteration 96, start
+rank 22, iteration 96, start
+rank 33, iteration 96, start
+rank 45, iteration 96, start
+rank 23, iteration 96, start
+rank 46, iteration 96, start
+rank 47, iteration 96, start
+rank 13, iteration 96, start
+rank 29, iteration 96, start
+rank 48, iteration 96, start
+rank 16, iteration 96, start
+rank 17, iteration 96, start
+rank 18, iteration 96, start
+rank 24, iteration 96, start
+rank 25, iteration 96, start
+rank 43, iteration 96, start
+rank 31, iteration 96, start
+rank 4, iteration 96, start
+rank 5, iteration 96, start
+rank 6, iteration 96, start
+rank 7, iteration 96, start
+rank 50, iteration 96, start
+rank 19, iteration 96, start
+rank 26, iteration 96, start
+rank 10, iteration 96, start
+rank 9, iteration 96, start
+rank 11, iteration 96, start
+rank 52, iteration 96, start
+rank 53, iteration 96, start
+rank 49, iteration 96, start
+rank 51, iteration 96, start
+rank 27, iteration 96, start
+rank 54, iteration 96, start
+rank 55, iteration 96, start
+Finished writing: 449600000
+rank 44, iteration 96, end
+Finished writing: 309600000
+rank 30, iteration 96, end
+Finished writing: 159600000
+rank 15, iteration 96, end
+Finished writing: 199600000
+rank 19, iteration 96, end
+Finished writing: 119600000
+rank 11, iteration 96, end
+Finished writing: 479600000
+rank 47, iteration 96, end
+Finished writing: 239600000
+rank 23, iteration 96, end
+Finished writing: 559600000
+rank 55, iteration 96, end
+Finished writing: 469600000
+rank 46, iteration 96, end
+Finished writing: 29600000
+rank 2, iteration 96, end
+Finished writing: 89600000
+rank 8, iteration 96, end
+Finished writing: 19600000
+rank 1, iteration 96, end
+Finished writing: 329600000
+rank 32, iteration 96, end
+Finished writing: 339600000
+rank 33, iteration 96, end
+Finished writing: 99600000
+rank 9, iteration 96, end
+Finished writing: 429600000
+rank 42, iteration 96, end
+Finished writing: 519600000
+rank 51, iteration 96, end
+Finished writing: 549600000
+rank 54, iteration 96, end
+Finished writing: 419600000
+rank 41, iteration 96, end
+Finished writing: 399600000
+rank 39, iteration 96, end
+Finished writing: 209600000
+rank 20, iteration 96, end
+Finished writing: 149600000
+rank 14, iteration 96, end
+Finished writing: 169600000
+rank 16, iteration 96, end
+Finished writing: 39600000
+rank 3, iteration 96, end
+Finished writing: 259600000
+rank 25, iteration 96, end
+Finished writing: 279600000
+rank 27, iteration 96, end
+Finished writing: 319600000
+rank 31, iteration 96, end
+Finished writing: 499600000
+rank 49, iteration 96, end
+Finished writing: 129600000
+rank 12, iteration 96, end
+Finished writing: 389600000
+rank 38, iteration 96, end
+Finished writing: 49600000
+rank 4, iteration 96, end
+Finished writing: 189600000
+rank 18, iteration 96, end
+Finished writing: 219600000
+rank 21, iteration 96, end
+Finished writing: 369600000
+rank 36, iteration 96, end
+Finished writing: 379600000
+rank 37, iteration 96, end
+Finished writing: 69600000
+rank 6, iteration 96, end
+Finished writing: 79600000
+rank 7, iteration 96, end
+Finished writing: 489600000
+rank 48, iteration 96, end
+Finished writing: 179600000
+rank 17, iteration 96, end
+Finished writing: 229600000
+rank 22, iteration 96, end
+Finished writing: 459600000
+rank 45, iteration 96, end
+Finished writing: 139600000
+rank 13, iteration 96, end
+Finished writing: 529600000
+rank 52, iteration 96, end
+Finished writing: 539600000
+rank 53, iteration 96, end
+Finished writing: 409600000
+rank 40, iteration 96, end
+Finished writing: 439600000
+rank 43, iteration 96, end
+Finished writing: 359600000
+rank 35, iteration 96, end
+Finished writing: 109600000
+rank 10, iteration 96, end
+Finished writing: 509600000
+rank 50, iteration 96, end
+Finished writing: 289600000
+rank 28, iteration 96, end
+Finished writing: 249600000
+rank 24, iteration 96, end
+Finished writing: 349600000
+rank 34, iteration 96, end
+Finished writing: 299600000
+rank 29, iteration 96, end
+Finished writing: 9600000
+rank 0, iteration 96, end
+Finished writing: 269600000
+rank 26, iteration 96, end
+Finished writing: 59600000
+rank 5, iteration 96, end
+-------------- iteration done ------------, 96
+rank 0, iteration 97, start
+rank 12, iteration 97, start
+rank 13, iteration 97, start
+rank 14, iteration 97, start
+rank 16, iteration 97, start
+rank 15, iteration 97, start
+rank 1, iteration 97, start
+rank 2, iteration 97, start
+rank 17, iteration 97, start
+rank 9, iteration 97, start
+rank 8, iteration 97, start
+rank 10, iteration 97, start
+rank 18, iteration 97, start
+rank 19, iteration 97, start
+rank 11, iteration 97, start
+rank 28, iteration 97, start
+rank 32, iteration 97, start
+rank 48, iteration 97, start
+rank 4, iteration 97, start
+rank 20, iteration 97, start
+rank 22, iteration 97, start
+rank 36, iteration 97, start
+rank 37, iteration 97, start
+rank 38, iteration 97, start
+rank 50, iteration 97, start
+rank 51, iteration 97, start
+rank 6, iteration 97, start
+rank 33, iteration 97, start
+rank 39, iteration 97, start
+rank 3, iteration 97, start
+rank 5, iteration 97, start
+rank 40, iteration 97, start
+rank 41, iteration 97, start
+rank 45, iteration 97, start
+rank 46, iteration 97, start
+rank 44, iteration 97, start
+rank 24, iteration 97, start
+rank 30, iteration 97, start
+rank 31, iteration 97, start
+rank 42, iteration 97, start
+rank 21, iteration 97, start
+rank 49, iteration 97, start
+rank 52, iteration 97, start
+rank 23, iteration 97, start
+rank 29, iteration 97, start
+rank 34, iteration 97, start
+rank 54, iteration 97, start
+rank 55, iteration 97, start
+rank 7, iteration 97, start
+rank 47, iteration 97, start
+rank 43, iteration 97, start
+rank 35, iteration 97, start
+rank 25, iteration 97, start
+rank 53, iteration 97, start
+rank 26, iteration 97, start
+rank 27, iteration 97, start
+Finished writing: 139700000
+rank 13, iteration 97, end
+Finished writing: 289700000
+rank 28, iteration 97, end
+Finished writing: 59700000
+rank 5, iteration 97, end
+Finished writing: 419700000
+rank 41, iteration 97, end
+Finished writing: 159700000
+rank 15, iteration 97, end
+Finished writing: 119700000
+rank 11, iteration 97, end
+Finished writing: 299700000
+rank 29, iteration 97, end
+Finished writing: 99700000
+rank 9, iteration 97, end
+Finished writing: 269700000
+rank 26, iteration 97, end
+Finished writing: 149700000
+rank 14, iteration 97, end
+Finished writing: 219700000
+rank 21, iteration 97, end
+Finished writing: 459700000
+rank 45, iteration 97, end
+Finished writing: 179700000
+rank 17, iteration 97, end
+Finished writing: 309700000
+rank 30, iteration 97, end
+Finished writing: 169700000
+rank 16, iteration 97, end
+Finished writing: 389700000
+rank 38, iteration 97, end
+Finished writing: 189700000
+rank 18, iteration 97, end
+Finished writing: 409700000
+rank 40, iteration 97, end
+Finished writing: 19700000
+rank 1, iteration 97, end
+Finished writing: 249700000
+rank 24, iteration 97, end
+Finished writing: 549700000
+rank 54, iteration 97, end
+Finished writing: 519700000
+rank 51, iteration 97, end
+Finished writing: 559700000
+rank 55, iteration 97, end
+Finished writing: 489700000
+rank 48, iteration 97, end
+Finished writing: 539700000
+rank 53, iteration 97, end
+Finished writing: 509700000
+rank 50, iteration 97, end
+Finished writing: 49700000
+rank 4, iteration 97, end
+Finished writing: 349700000
+rank 34, iteration 97, end
+Finished writing: 339700000
+rank 33, iteration 97, end
+Finished writing: 9700000
+rank 0, iteration 97, end
+Finished writing: 429700000
+rank 42, iteration 97, end
+Finished writing: 469700000
+rank 46, iteration 97, end
+Finished writing: 199700000
+rank 19, iteration 97, end
+Finished writing: 399700000
+rank 39, iteration 97, end
+Finished writing: 439700000
+rank 43, iteration 97, end
+Finished writing: 229700000
+rank 22, iteration 97, end
+Finished writing: 79700000
+rank 7, iteration 97, end
+Finished writing: 29700000
+rank 2, iteration 97, end
+Finished writing: 209700000
+rank 20, iteration 97, end
+Finished writing: 379700000
+rank 37, iteration 97, end
+Finished writing: 449700000
+rank 44, iteration 97, end
+Finished writing: 479700000
+rank 47, iteration 97, end
+Finished writing: 69700000
+rank 6, iteration 97, end
+Finished writing: 529700000
+rank 52, iteration 97, end
+Finished writing: 239700000
+rank 23, iteration 97, end
+Finished writing: 89700000
+rank 8, iteration 97, end
+Finished writing: 109700000
+rank 10, iteration 97, end
+Finished writing: 279700000
+rank 27, iteration 97, end
+Finished writing: 369700000
+rank 36, iteration 97, end
+Finished writing: 129700000
+rank 12, iteration 97, end
+Finished writing: 319700000
+rank 31, iteration 97, end
+Finished writing: 329700000
+rank 32, iteration 97, end
+Finished writing: 39700000
+rank 3, iteration 97, end
+Finished writing: 259700000
+rank 25, iteration 97, end
+Finished writing: 359700000
+rank 35, iteration 97, end
+Finished writing: 499700000
+rank 49, iteration 97, end
+-------------- iteration done ------------, 97
+rank 12, iteration 98, start
+rank 40, iteration 98, start
+rank 41, iteration 98, start
+rank 13, iteration 98, start
+rank 16, iteration 98, start
+rank 44, iteration 98, start
+rank 45, iteration 98, start
+rank 14, iteration 98, start
+rank 15, iteration 98, start
+rank 42, iteration 98, start
+rank 43, iteration 98, start
+rank 0, iteration 98, start
+rank 8, iteration 98, start
+rank 10, iteration 98, start
+rank 24, iteration 98, start
+rank 28, iteration 98, start
+rank 17, iteration 98, start
+rank 29, iteration 98, start
+rank 30, iteration 98, start
+rank 1, iteration 98, start
+rank 31, iteration 98, start
+rank 20, iteration 98, start
+rank 32, iteration 98, start
+rank 11, iteration 98, start
+rank 18, iteration 98, start
+rank 46, iteration 98, start
+rank 21, iteration 98, start
+rank 26, iteration 98, start
+rank 33, iteration 98, start
+rank 36, iteration 98, start
+rank 37, iteration 98, start
+rank 19, iteration 98, start
+rank 22, iteration 98, start
+rank 25, iteration 98, start
+rank 2, iteration 98, start
+rank 3, iteration 98, start
+rank 9, iteration 98, start
+rank 47, iteration 98, start
+rank 27, iteration 98, start
+rank 48, iteration 98, start
+rank 52, iteration 98, start
+rank 53, iteration 98, start
+rank 38, iteration 98, start
+rank 4, iteration 98, start
+rank 5, iteration 98, start
+rank 39, iteration 98, start
+rank 23, iteration 98, start
+rank 34, iteration 98, start
+rank 50, iteration 98, start
+rank 49, iteration 98, start
+rank 54, iteration 98, start
+rank 51, iteration 98, start
+rank 6, iteration 98, start
+rank 35, iteration 98, start
+rank 55, iteration 98, start
+rank 7, iteration 98, start
+Finished writing: 259800000
+rank 25, iteration 98, end
+Finished writing: 449800000
+rank 44, iteration 98, end
+Finished writing: 399800000
+rank 39, iteration 98, end
+Finished writing: 519800000
+rank 51, iteration 98, end
+Finished writing: 19800000
+rank 1, iteration 98, end
+Finished writing: 209800000
+rank 20, iteration 98, end
+Finished writing: 429800000
+rank 42, iteration 98, end
+Finished writing: 149800000
+rank 14, iteration 98, end
+Finished writing: 419800000
+rank 41, iteration 98, end
+Finished writing: 139800000
+rank 13, iteration 98, end
+Finished writing: 249800000
+rank 24, iteration 98, end
+Finished writing: 289800000
+rank 28, iteration 98, end
+Finished writing: 39800000
+rank 3, iteration 98, end
+Finished writing: 49800000
+rank 4, iteration 98, end
+Finished writing: 129800000
+rank 12, iteration 98, end
+Finished writing: 379800000
+rank 37, iteration 98, end
+Finished writing: 269800000
+rank 26, iteration 98, end
+Finished writing: 159800000
+rank 15, iteration 98, end
+Finished writing: 9800000
+rank 0, iteration 98, end
+Finished writing: 409800000
+rank 40, iteration 98, end
+Finished writing: 59800000
+rank 5, iteration 98, end
+Finished writing: 239800000
+rank 23, iteration 98, end
+Finished writing: 359800000
+rank 35, iteration 98, end
+Finished writing: 489800000
+Finished writing: 109800000
+Finished writing: 389800000
+rank 38, iteration 98, end
+Finished writing: 119800000
+rank 11, iteration 98, end
+rank 10, iteration 98, end
+rank 48, iteration 98, end
+Finished writing: 439800000
+Finished writing: 229800000
+rank 22, iteration 98, end
+Finished writing: 219800000
+rank 21, iteration 98, end
+rank 43, iteration 98, end
+Finished writing: 499800000
+Finished writing: 309800000
+Finished writing: 339800000
+rank 33, iteration 98, end
+Finished writing: 349800000
+rank 34, iteration 98, end
+rank 30, iteration 98, end
+rank 49, iteration 98, end
+Finished writing: 169800000
+rank 16, iteration 98, end
+Finished writing: 459800000
+rank 45, iteration 98, end
+Finished writing: 479800000
+rank 47, iteration 98, end
+Finished writing: 29800000
+rank 2, iteration 98, end
+Finished writing: 69800000
+rank 6, iteration 98, end
+Finished writing: 89800000
+rank 8, iteration 98, end
+Finished writing: 279800000
+rank 27, iteration 98, end
+Finished writing: 319800000
+rank 31, iteration 98, end
+Finished writing: 329800000
+rank 32, iteration 98, end
+Finished writing: 559800000
+rank 55, iteration 98, end
+Finished writing: 179800000
+rank 17, iteration 98, end
+Finished writing: 189800000
+rank 18, iteration 98, end
+Finished writing: 199800000
+rank 19, iteration 98, end
+Finished writing: 369800000
+rank 36, iteration 98, end
+Finished writing: 529800000
+rank 52, iteration 98, end
+Finished writing: 79800000
+rank 7, iteration 98, end
+Finished writing: 469800000
+rank 46, iteration 98, end
+Finished writing: 299800000
+rank 29, iteration 98, end
+Finished writing: 509800000
+rank 50, iteration 98, end
+Finished writing: 539800000
+rank 53, iteration 98, end
+Finished writing: 549800000
+rank 54, iteration 98, end
+Finished writing: 99800000
+rank 9, iteration 98, end
+-------------- iteration done ------------, 98
+rank 0, iteration 99, start
+rank 1, iteration 99, start
+rank 4, iteration 99, start
+rank 28, iteration 99, start
+rank 29, iteration 99, start
+rank 8, iteration 99, start
+rank 24, iteration 99, start
+rank 32, iteration 99, start
+rank 25, iteration 99, start
+rank 12, iteration 99, start
+rank 13, iteration 99, start
+rank 14, iteration 99, start
+rank 20, iteration 99, start
+rank 40, iteration 99, start
+rank 41, iteration 99, start
+rank 42, iteration 99, start
+rank 44, iteration 99, start
+rank 9, iteration 99, start
+rank 48, iteration 99, start
+rank 16, iteration 99, start
+rank 18, iteration 99, start
+rank 21, iteration 99, start
+rank 33, iteration 99, start
+rank 52, iteration 99, start
+rank 53, iteration 99, start
+rank 6, iteration 99, start
+rank 17, iteration 99, start
+rank 36, iteration 99, start
+rank 45, iteration 99, start
+rank 5, iteration 99, start
+rank 49, iteration 99, start
+rank 46, iteration 99, start
+rank 50, iteration 99, start
+rank 54, iteration 99, start
+rank 55, iteration 99, start
+rank 26, iteration 99, start
+rank 51, iteration 99, start
+rank 10, iteration 99, start
+rank 27, iteration 99, start
+rank 15, iteration 99, start
+rank 22, iteration 99, start
+rank 43, iteration 99, start
+rank 34, iteration 99, start
+rank 7, iteration 99, start
+rank 11, iteration 99, start
+rank 38, iteration 99, start
+rank 39, iteration 99, start
+rank 37, iteration 99, start
+rank 47, iteration 99, start
+rank 19, iteration 99, start
+rank 35, iteration 99, start
+rank 2, iteration 99, start
+rank 3, iteration 99, start
+rank 30, iteration 99, start
+rank 23, iteration 99, start
+rank 31, iteration 99, start
+Finished writing: 379900000
+rank 37, iteration 99, end
+Finished writing: 419900000
+rank 41, iteration 99, end
+Finished writing: 59900000
+rank 5, iteration 99, end
+Finished writing: 459900000
+rank 45, iteration 99, end
+Finished writing: 99900000
+rank 9, iteration 99, end
+Finished writing: 449900000
+rank 44, iteration 99, end
+Finished writing: 509900000
+rank 50, iteration 99, end
+Finished writing: 219900000
+rank 21, iteration 99, end
+Finished writing: 319900000
+rank 31, iteration 99, end
+Finished writing: 429900000
+rank 42, iteration 99, end
+Finished writing: 259900000
+rank 25, iteration 99, end
+Finished writing: 229900000
+rank 22, iteration 99, end
+Finished writing: 519900000
+rank 51, iteration 99, end
+Finished writing: 389900000
+rank 38, iteration 99, end
+Finished writing: 109900000
+rank 10, iteration 99, end
+Finished writing: 149900000
+rank 14, iteration 99, end
+Finished writing: 119900000
+rank 11, iteration 99, end
+Finished writing: 139900000
+rank 13, iteration 99, end
+Finished writing: 279900000
+rank 27, iteration 99, end
+Finished writing: 249900000
+rank 24, iteration 99, end
+Finished writing: 69900000
+rank 6, iteration 99, end
+Finished writing: 49900000
+rank 4, iteration 99, end
+Finished writing: 269900000
+rank 26, iteration 99, end
+Finished writing: 299900000
+rank 29, iteration 99, end
+Finished writing: 39900000
+rank 3, iteration 99, end
+Finished writing: 309900000
+rank 30, iteration 99, end
+Finished writing: 489900000
+rank 48, iteration 99, end
+Finished writing: 539900000
+rank 53, iteration 99, end
+Finished writing: 129900000
+rank 12, iteration 99, end
+Finished writing: 179900000
+rank 17, iteration 99, end
+Finished writing: 439900000
+rank 43, iteration 99, end
+Finished writing: 369900000
+rank 36, iteration 99, end
+Finished writing: 189900000
+rank 18, iteration 99, end
+Finished writing: 409900000
+rank 40, iteration 99, end
+Finished writing: 199900000
+rank 19, iteration 99, end
+Finished writing: 359900000
+rank 35, iteration 99, end
+Finished writing: 559900000
+rank 55, iteration 99, end
+Finished writing: 469900000
+rank 46, iteration 99, end
+Finished writing: 399900000
+rank 39, iteration 99, end
+Finished writing: 549900000
+rank 54, iteration 99, end
+Finished writing: 159900000
+rank 15, iteration 99, end
+Finished writing: 239900000
+rank 23, iteration 99, end
+Finished writing: 89900000
+rank 8, iteration 99, end
+Finished writing: 289900000
+rank 28, iteration 99, end
+Finished writing: 339900000
+rank 33, iteration 99, end
+Finished writing: 349900000
+rank 34, iteration 99, end
+Finished writing: 499900000
+rank 49, iteration 99, end
+Finished writing: 529900000
+rank 52, iteration 99, end
+Finished writing: 169900000
+rank 16, iteration 99, end
+Finished writing: 479900000
+rank 47, iteration 99, end
+Finished writing: 19900000
+rank 1, iteration 99, end
+Finished writing: 9900000
+rank 0, iteration 99, end
+Finished writing: 79900000
+rank 7, iteration 99, end
+Finished writing: 329900000
+rank 32, iteration 99, end
+Finished writing: 209900000
+rank 20, iteration 99, end
+Finished writing: 29900000
+rank 2, iteration 99, end
+-------------- iteration done ------------, 99
