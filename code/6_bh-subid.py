@@ -8,6 +8,13 @@ from bf_util import *
 from mpi4py import MPI
 from scipy.stats import rankdata
 
+"""
+assign subgroupID to BHs
+also rewrite mbt cols using True BH mass
+
+
+"""
+
 
 
 def place(bidxlist,suboff5):
@@ -30,6 +37,7 @@ if __name__ == "__main__":
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--gstart',default=0,type=int,help='where to begin the rewriting')
     parser.add_argument('--gend',default=0,type=int,help='where to finish the rewriting')
+    
 
     
     args = parser.parse_args()
@@ -43,8 +51,8 @@ if __name__ == "__main__":
     
     comm.barrier()
     #---------- Initialize  blocks --------------
-    blockname = '5/SubIDinGroup'
-    dtype = 'i4'
+    blockname = '5/SubgroupIdx'
+    dtype = 'i8'
     dsize = dest_r['5/ID'].size
     nfile = dest_r['5/ID'].Nfile
     if gstart == 0:
@@ -53,9 +61,9 @@ if __name__ == "__main__":
         block = dest_w[blockname]
     comm.barrier()
         
-    Length  = dest_r['FOFGroups/LengthByType']
-    Offset  = dest_r['FOFGroups/OffsetByType']
-    
+
+    sLength  = dest_r['SubGroups/LengthByType']
+    sOffset  = dest_r['SubGroups/OffsetByType']
     # ----------- Split tasks --------------------
     NBHs   = Offset[gend,5]
     istart = NBHs * rank // size

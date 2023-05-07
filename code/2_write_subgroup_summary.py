@@ -233,7 +233,7 @@ if __name__ == "__main__":
     parser.add_argument('--grpfile',required=True,type=str,help='name of the subfind group file')
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--cstart',default=0,type=int,help='starting chunk')
-    parser.add_argument('--minpart',default=200,type=int,help='min particle in halo to start rewriting')
+    parser.add_argument('--minpart',default=1,type=int,help='min particle in halo to start rewriting')
 
     args = parser.parse_args()
     

@@ -78,6 +78,13 @@ def subhalo_offset(tabfile):
 
 
 def assign_sid_chunk(tabfile,grpfile):
+    """
+    returns: 
+    
+    sgpIDs : dict with sgpIDs[p] the subgroupID of all particles type p, in chunk ordering
+    SubhaloLenType : subhalo lbt of chunk data
+    
+    """
     
     # this may not exist for certain snapshots!
     SubhaloOffType = subhalo_offset(tabfile)
@@ -116,9 +123,16 @@ def reorder_group(ig,Length,Offset,sgpIDs):
     """
     Get the sorting index tp sort by subgroup IDs
     for particles in each 
+    
+    Input:
+    ig : relative group idx in this batch
+    Length: lbt of groups in this batch
+    Offset: obt of groups in this batch
+    sgpIds: output of assign_sid_chunk
+    
     """
 
-    # relative position in group
+    # relative index in batch
     start, end  = Offset[ig] - Offset[0], Offset[ig] - Offset[0] + Length[ig]
     # print('start,end',start,end)
     p = 1
