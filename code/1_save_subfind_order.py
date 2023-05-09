@@ -142,7 +142,7 @@ def get_group_newidx(p, ig, start, end, sgpIDs):
         # no substructure in this group
         sort_ind = np.arange(end[p] - start[p])
     else:
-        sort_ind    = np.argsort(sub_ID)
+        sort_ind    = np.argsort(sgpIDs[p][end[p] - start[p]])
     return sort_ind
     
 def get_chunk_newidx_sid(p, Length, Offset, sgpIds, Ngroups, skipchunk=False):
