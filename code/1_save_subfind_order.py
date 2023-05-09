@@ -119,60 +119,50 @@ def assign_sid_chunk(tabfile,grpfile):
     return sgpIDs, SubhaloLenType
 
 
-def reorder_group(ig,Length,Offset,sgpIDs):
+
+def get_group_newidx(p, ig, start, end, sgpIDs):
     """
-    Get the sorting index tp sort by subgroup IDs
-    for particles in each 
+    Get the sorting index and sorted SubIDs 
+    (needed in case a group is splitted)
+    for particles in each group
     
     Input:
     ig : relative group idx in this batch
+    p: particle type
     Length: lbt of groups in this batch
     Offset: obt of groups in this batch
-    sgpIds: output of assign_sid_chunk
-    
+    sgpIds: dict of unsorted sID
     """
 
-    # relative index in batch
-    start, end  = Offset[ig] - Offset[0], Offset[ig] - Offset[0] + Length[ig]
-    # print('start,end',start,end)
-    p = 1
-    subID_set = set()
-    for p in [0,1,4,5]:
-        subID_set = subID_set.union(set(sgpIDs[p][start[p]:end[p]]))
-    subID_arr   = np.array(list(subID_set))
-    subID_arr   = np.sort(subID_arr)
-    
-    if len(subID_arr)==0 or subID_arr[0] == FUZZ:
+    subID_arr = np.concatenate([sgpIDs[p][start[p]:end[p]] for p in [0,1,4,5]])
+    if skipchunk:
+        sort_ind = np.arange(end[p] - start[p])
+    elif len(subID_arr) == 0:
+        # for some reason no data...
+        sort_ind = np.arange(end[p] - start[p])
+    elif np.min(subID_arr) == FUZZ:
         # no substructure in this group
-        return None,None
-
-    fof_sort = {}
-    subID_sorted = {}
-    for p in [0,1,4,5]:
-        sub_ID      = sgpIDs[p][start[p]:end[p]]
+        sort_ind = np.arange(end[p] - start[p])
+    else:
         sort_ind    = np.argsort(sub_ID)
-        fof_sort[p] = sort_ind
-        subID_sorted[p] = sub_ID[sort_ind]
-    return fof_sort,subID_sorted
-
-
-def write_group_order(ig,Length,Offset,subID_sorted,new_order):
-    start, end  = Offset[ig], Offset[ig] + Length[ig]
+    return sort_ind
     
-    for p in [0,1,4,5]:
-    # for p in [1]:
-        blockname1 = '%d/SubgroupID'%p
-        blockname2 = '%d/NewIndex'%p
-        if subID_sorted is None:
-            data =  FUZZ * np.ones(end[p] - start[p])
-            blocks[0][p].write(start[p], data)
-            
-            data = np.arange(end[p] - start[p])
-            blocks[1][p].write(start[p], data)
-        else:
-            blocks[0][p].write(start[p], subID_sorted[p])
-            blocks[1][p].write(start[p], new_order[p])
-
+def get_chunk_newidx_sid(p, Length, Offset, sgpIds, Ngroups, skipchunk=False):
+    starts, ends = Offset - Offset[0], Offset - Offset[0] + Length
+    if skipchunk:
+        chunk_newidx = [np.arange(ends[ig][p] - starts[ig][p]) for ig in range(Ngroups)]
+        chunk_sids = FUZZ * np.ones(ends[-1][p] - starts[0][p])
+        
+    else:
+        chunk_newidx = [get_group_newidx(p, ig, starts[ig], ends[ig], sgpIds) for ig in range(Ngroups)]
+        chunk_sids = np.concatenate([sgpIDs[p][starts[ig][p]:ends[ig][p]][sort_ind] for ig,sort_ind in enumerate(chunk_newidx)])
+    
+    return np.concatenate(chunk_newidx), chunk_sids
+    
+    
+def write_chunk_data(p, start, end, subID_sorted,new_order):
+    blocks[0][p].write(start[p], subID_sorted)
+    blocks[1][p].write(start[p], new_order)
 
     
 def process_chunk(c):
@@ -203,24 +193,27 @@ def process_chunk(c):
         #----------------- reorder and assign subID -----------------------
         fof_sort = fof_sorted(pstart, pend)
         sub_sort = sub_sorted(grpfile)
+        
         sgpIDs, SubhaloLenType  = assign_sid_chunk(tabfile,grpfile)
+        
         for p in [0,1,4,5]:
             sgpIDs[p][fof_sort[p]] = sgpIDs[p][sub_sort[p]]
+            
+        for p in [0,1,4,5]:
+            # get orders
+            new_order, subID_sorted = get_chunk_newidx_sid(p, Length, Offset, sgpIDs, Ngroups)
+            # write orders
+            write_chunk_data(p, pstart, pend, subID_sorted, new_order)
 
-        for ig in range(Ngroups):
-            # i is the relative group index
-            # gidx is the absolute group index
-            new_order,subID_sorted = reorder_group(ig,Length,Offset,sgpIDs)
-            write_group_order(ig,Length,Offset,subID_sorted,new_order)
 
     else: #no subhalo in the entire chunk
         #------------------ Nothing to do, just write -----------------------
         print('skipping entire chunk:',c,flush=True)
-        for ig in range(Ngroups):
-            # catagorize all as FUZZ
-            # do not reorder groups in this chunk
-            subID_sorted,new_order = None,None
-            write_group_order(ig,Length,Offset,subID_sorted,new_order)
+        for p in [0,1,4,5]:
+            # get orders
+            new_order, subID_sorted = get_chunk_newidx_sid(p, Length, Offset, sgpIDs, Ngroups, skipchunk=True)
+            # write orders
+            write_chunk_data(p, pstart, pend, subID_sorted, new_order)
 
     print('chunk %d done!'%c,flush=True)
 
@@ -245,6 +238,7 @@ if __name__ == "__main__":
     parser.add_argument('--grpfile',required=True,type=str,help='name of the subfind group file')
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--cstart',default=0,type=int,help='starting chunk')
+    parser.add_argument('--cend',default=0,type=int,help='ending chunk (exclusive)')
     args = parser.parse_args()
     
     #--------------------------
@@ -259,7 +253,8 @@ if __name__ == "__main__":
     gsize = pig['FOFGroups/LengthByType'].size
     FUZZ = 100000000
     
-
+    if rank==0:
+        print('subfind root:', subroot, flush=True)
 
 #    ------------------ Initialize Blocks --------------------
     comm.barrier()
@@ -291,18 +286,22 @@ if __name__ == "__main__":
     comm.barrier()
     chunk_list, maxgroup_list = get_subfind_chunk(subroot)
 
-    
-    Nchunks = int(len(chunk_list) - cstart)
+    if args.cend < cstart:
+        cend = len(chunk_list)
+    else:
+        cend = int(args.cend)
+    Nchunks = int(cend - cstart)
     
     istart = Nchunks * rank // size
     iend = Nchunks * (rank+1) // size
+    
     if rank == 0:
         print('Total chunks:',Nchunks)
         print('Saving dir:',args.dest,flush=True)
     comm.barrier()
-    print('Rank %03d will process chunk %03d to chunk %03d'%(rank,istart,iend))
+    print('Rank %03d will process chunk %03d to chunk %03d'%(rank,cstart+istart,cstart+iend))
     comm.barrier()
-    chunks = chunk_list[cstart:]
+    chunks = chunk_list[cstart:cend]
     for chunk in chunks[istart:iend]:
         process_chunk(chunk)
             
