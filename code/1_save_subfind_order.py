@@ -135,9 +135,7 @@ def get_group_newidx(p, ig, start, end, sgpIDs):
     """
 
     subID_arr = np.concatenate([sgpIDs[p][start[p]:end[p]] for p in [0,1,4,5]])
-    if skipchunk:
-        sort_ind = np.arange(end[p] - start[p])
-    elif len(subID_arr) == 0:
+    if len(subID_arr) == 0:
         # for some reason no data...
         sort_ind = np.arange(end[p] - start[p])
     elif np.min(subID_arr) == FUZZ:
@@ -152,7 +150,6 @@ def get_chunk_newidx_sid(p, Length, Offset, sgpIds, Ngroups, skipchunk=False):
     if skipchunk:
         chunk_newidx = [np.arange(ends[ig][p] - starts[ig][p]) for ig in range(Ngroups)]
         chunk_sids = FUZZ * np.ones(ends[-1][p] - starts[0][p])
-        
     else:
         chunk_newidx = [get_group_newidx(p, ig, starts[ig], ends[ig], sgpIds) for ig in range(Ngroups)]
         chunk_sids = np.concatenate([sgpIDs[p][starts[ig][p]:ends[ig][p]][sort_ind] for ig,sort_ind in enumerate(chunk_newidx)])
