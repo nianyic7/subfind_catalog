@@ -134,26 +134,34 @@ def get_group_newidx(p, ig, start, end, sgpIDs):
     sgpIds: dict of unsorted sID
     """
 
-    subID_arr = np.concatenate([sgpIDs[p][start[p]:end[p]] for p in [0,1,4,5]])
-    if len(subID_arr) == 0:
+    # subID_arr = np.concatenate([sgpIDs[p][start[p]:end[p]] for p in [0,1,4,5]])
+    if start[p] == end[p]:
         # for some reason no data...
-        sort_ind = np.arange(end[p] - start[p])
-    elif np.min(subID_arr) == FUZZ:
+        sort_ind = np.array([], dtype=int)
+    elif np.min(sgpIDs[p][start[p]:end[p]]) == FUZZ:
         # no substructure in this group
-        sort_ind = np.arange(end[p] - start[p])
+        sort_ind = np.arange(end[p] - start[p]).astype(int)
     else:
-        sort_ind    = np.argsort(sgpIDs[p][end[p] - start[p]])
+        sort_ind    = np.argsort(sgpIDs[p][start[p]:end[p]]).astype(int)
     return sort_ind
     
-def get_chunk_newidx_sid(p, Length, Offset, sgpIds, Ngroups, skipchunk=False):
-    starts, ends = Offset - Offset[0], Offset - Offset[0] + Length
+    
+    
+    
+def get_chunk_newidx_sid(p, Length, Offset, sgpIDs, Ngroups, skipchunk=False):
+    starts, ends = (Offset - Offset[0:1]).astype(int), (Offset - Offset[0:1] + Length).astype(int)
+    print("starting shape:", starts.shape, ends.shape, flush=True)
+    
     if skipchunk:
         chunk_newidx = [np.arange(ends[ig][p] - starts[ig][p]) for ig in range(Ngroups)]
         chunk_sids = FUZZ * np.ones(ends[-1][p] - starts[0][p])
     else:
-        chunk_newidx = [get_group_newidx(p, ig, starts[ig], ends[ig], sgpIds) for ig in range(Ngroups)]
-        chunk_sids = np.concatenate([sgpIDs[p][starts[ig][p]:ends[ig][p]][sort_ind] for ig,sort_ind in enumerate(chunk_newidx)])
-    
+        chunk_newidx = [get_group_newidx(p, ig, starts[ig], ends[ig], sgpIDs) for ig in range(Ngroups)]
+
+        chunk_sids = np.concatenate([sgpIDs[p][starts[ig][p]:ends[ig][p]][sort_ind] \
+                                     for ig,sort_ind in enumerate(chunk_newidx) if starts[ig][p] < ends[ig][p]])
+
+
     return np.concatenate(chunk_newidx), chunk_sids
     
     
@@ -235,7 +243,7 @@ if __name__ == "__main__":
     parser.add_argument('--grpfile',required=True,type=str,help='name of the subfind group file')
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--cstart',default=0,type=int,help='starting chunk')
-    parser.add_argument('--cend',default=0,type=int,help='ending chunk (exclusive)')
+    parser.add_argument('--cend',default=-1,type=int,help='ending chunk (exclusive)')
     args = parser.parse_args()
     
     #--------------------------

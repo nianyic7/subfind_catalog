@@ -30,54 +30,64 @@ def group_chunk_dir(groupidx):
     chunk = np.nonzero(maxgroup_list-1>=groupidx)[0][0]
     return chunk
 
-
-def get_SubgroupOff(GroupOff,SubLen):
-    if len(SubLen) == 0:
-        return np.zeros((0,6),dtype = np.int64)
-    SubOff = np.zeros_like(SubLen,dtype=np.int64)
-    SubOff[1:] = np.cumsum(SubLen[:-1],axis=0)
-    return (SubOff + GroupOff).astype(np.int64)
-
-def write_subgroup_offset(block,gstart,gend):
-    if gstart < 1000:
+    
+def write_subgroup_sfr(block, gstart, gend):
+    if gstart < 10000:
         for gidx in range(gstart,gend):
+            start = dest_r['FOFGroups/OffsetByType'][gidx][0]
+            end = start + dest_r['FOFGroups/LengthByType'][gidx][0]
+            # data
+            GroupSFR = dest_r['0/StarFormationRate'][start : end]
+            
             FirstSubs = dest_r['FOFGroups/GroupFirstSub'][gidx]
             Nsubs     =  dest_r['FOFGroups/GroupNsubs'][gidx]
-            GroupOff  = dest_r['FOFGroups/OffsetByType'][gidx]
-            SubLen    = dest_r['SubGroups/SubhaloLenType'][FirstSubs:FirstSubs+Nsubs]
-            SubOff    = get_SubgroupOff(GroupOff,SubLen)
-            block.write(FirstSubs,SubOff)
-            # print('group %d done!'%gidx)
+            SubLen    = dest_r['SubGroups/SubhaloLenType'][FirstSubs:FirstSubs+Nsubs][:,0].astype(np.int64)
+            SubOff    = dest_r['SubGroups/SubhaloOffsetType'][FirstSubs:FirstSubs+Nsubs][:,0].astype(np.int64)
             
+            SubOff = SubOff - SubOff[0:1]
+            
+            starts, ends = SubOff, SubOff + SubLen
+            nsubs = len(SubOff)
+
+            SubSFR = np.array([np.sum(GroupSFR[starts[i] : ends[i]]) for i in range(nsubs)])
+            
+            block.write(FirstSubs, SubSFR)
     else:
-        FirstSubs = dest_r['FOFGroups/GroupFirstSub'][gstart:gend]
-        mask = FirstSubs > 0
-        FirstSubs = FirstSubs[mask]
-        Nsubs     =  dest_r['FOFGroups/GroupNsubs'][gstart:gend][mask]
-        GroupOff  = dest_r['FOFGroups/OffsetByType'][gstart:gend][mask]
+        start = dest_r['FOFGroups/OffsetByType'][gstart][0]
+        end = dest_r['FOFGroups/OffsetByType'][gend][0]
+        # data
+        GroupSFR = dest_r['0/StarFormationRate'][start : end]
+        
+        FirstSubs = dest_r['FOFGroups/GroupFirstSub'][gstart : gend]
+        Nsubs = dest_r['FOFGroups/GroupNsubs'][gstart : gend]
+
+        hassub = (FirstSubs > 0).nonzero()[0]
+        
+        if len(hassub) == 0:
+            return
+        
+        FirstSub = FirstSubs[hassub][0]
+        LastSub  = FirstSubs[hassub][-1] + Nsubs[hassub][-1]
+
+        SubLen    = dest_r['SubGroups/SubhaloLenType'][FirstSub : LastSub][:,0].astype(np.int64)
+        SubOff    = dest_r['SubGroups/SubhaloOffsetType'][FirstSub : LastSub][:,0].astype(np.int64)
+        
+        
+        SubOff = SubOff - SubOff[0]
+        starts, ends = SubOff, SubOff + SubLen
+        nsubs = len(SubOff)
+
+        SubSFR = np.array([np.sum(GroupSFR[starts[i] : ends[i]]) for i in range(nsubs)])
     
-    
-        sstart,send = FirstSubs[0], FirstSubs[-1] + Nsubs[-1]
-        try:
-            SubLen    = dest_r['SubGroups/SubhaloLenType'][sstart:send]
-        except ValueError:
-            print(gstart,gend,sstart,send,flush=True)
-            assert 0==1
-        FirstSubs = FirstSubs - FirstSubs[0]
+        block.write(FirstSub, SubSFR)
+            
 
-        starts, ends = FirstSubs, FirstSubs + Nsubs
-        SubOff = [get_SubgroupOff(GroupOff[i],SubLen[starts[i]: ends[i]]) for i in range(len(Nsubs))]
+def init_sfrblock():
+    dtype  = '<f4'
+    dsize  = dest_r['SubGroups/SubhaloSFR'].size
+    nfile = dest_r['SubGroups/SubhaloSFR'].Nfile
 
-        SubOff = np.concatenate(SubOff, axis=0)
-        block.write(sstart,SubOff)
-        # print('group %d done!'%(gend-1))
-
-def init_offblock():
-    dtype  = ('<i8', (6,))
-    dsize  = dest_r['SubGroups/SubhaloLenType'].size
-    nfile = dest_r['SubGroups/SubhaloLenType'].Nfile
-
-    blockname = 'SubGroups/SubhaloOffsetType'
+    blockname = 'SubGroups/SubhaloSFR'
     block = dest_w.create(blockname, dtype, dsize, nfile)
 
     if rank == 0:
@@ -143,7 +153,7 @@ if __name__ == "__main__":
             print('Updated ending Gidx for reordering: %d'%gend,flush=True)
 
     #---------- Initialize all blocks --------------
-    block = init_offblock()
+    block = init_sfrblock()
     comm.barrier()
     
     Ngroups = gend
@@ -155,6 +165,6 @@ if __name__ == "__main__":
     
 
 
-    write_subgroup_offset(block,istart,iend)
+    write_subgroup_sfr(block, istart, iend)
     
     
