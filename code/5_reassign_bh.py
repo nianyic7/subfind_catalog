@@ -54,8 +54,8 @@ def get_cmbh_mgal(pig2):
 def get_targets(gal_gidx, gal_cm5, gal_mass, cen_idx, ind):
 
     # reassign these BHs:
-    mask1 = gal_cm5 > gal_mass/10
-    mask1 &= gal_cm5 > 2e7
+    mask1 = gal_cm5 > gal_mass/30
+    mask1 &= gal_cm5 > 5e6
     
     gidx_tar = gal_gidx[mask1]
     sidx_tar = ind[mask1]

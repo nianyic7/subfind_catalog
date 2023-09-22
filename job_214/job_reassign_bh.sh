@@ -8,4 +8,4 @@
 #SBATCH --output=slurm-reassign-bh.out
 
 
-srun python3 ../code/5_reassign_bh.py  --snap 348
+srun python3 ../reassign_bh.py  --snap 214
