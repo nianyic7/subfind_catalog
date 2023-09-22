@@ -1,6 +1,6 @@
 """
 Reassign large BH with very small galaxy mass into the nearest central subhalo
-criterion: M_BH > M_gal/10, M_BH>2e7
+criterion: M_BH > M_gal/50, M_BH>1e7
 - rearrange the BHs in the target group, so that the large BH is in subgroup0
 - (order BH in each subgroup by mass maybe later)
 - rewrite col5 of SubhaloLenType to be consistent with the new ordering (+1 for central, -1 for small gal)
@@ -54,8 +54,17 @@ def get_cmbh_mgal(pig2):
 def get_targets(gal_gidx, gal_cm5, gal_mass, cen_idx, ind):
 
     # reassign these BHs:
-    mask1 = gal_cm5 > gal_mass/30
-    mask1 &= gal_cm5 > 5e6
+    # group 1:
+    mask1 = gal_cm5 > gal_mass / min_gal_bh_ratio1
+    mask1 &= gal_cm5 > min_bhmass1
+    
+    # group 2:
+    mask2 = (np.log10(gal_cm5) - 6.5) > (np.log10(gal_mass) - 6)/min_gal_bh_ratio2
+    mask2 &= gal_cm5 > min_bhmass2
+    mask2 &= gal_cm5 < min_bhmass1
+    
+    mask1 |= mask2
+    
     
     gidx_tar = gal_gidx[mask1]
     sidx_tar = ind[mask1]
@@ -87,7 +96,10 @@ def process_group(pig_r, gidx):
     sobt    = Sobt[firstsub : firstsub + nsub] # start index of all part in each subgroup
     slbt    = Slbt[firstsub : firstsub + nsub]
     slen    = pig_r['SubGroups/SubhaloLen'][firstsub : firstsub + nsub]
+    smbt    = Smbt[firstsub : firstsub + nsub]
     cen_pos = Spos[firstsub : firstsub + nsub] # position of each subgroup
+    sbhmass = pig_r['SubGroups/SubhaloBHMass'][firstsub : firstsub + nsub]
+    sbhmdot = pig_r['SubGroups/SubhaloBHMdot'][firstsub : firstsub + nsub]
     
     # the original index of all bhs in this group
     allbh_sidx = np.zeros(Glbt[gidx][5], dtype=int)
@@ -102,16 +114,18 @@ def process_group(pig_r, gidx):
         bhpos   = pig_r['5/Position'][bidx]
         bhgroup = pig_r['5/GroupID'][bidx] - 1
         bhmass  = pig_r['5/BlackholeMass'][bidx] * 1e10/hh
+        bhmdot = pig_r['5/BlackholeAccretionRate'][bidx]
+        
         #--------------------Find new order----------------------------
         idx_in_group = int(bidx - gstart) # bh index in group
         dr = calc_dr(cen_pos, bhpos)
 
         for i,d in enumerate(dr):
-            if d < 30:
+            if d < 20:
                 break
         newsub = i + firstsub # abs index of new subgroup
         
-        if Smbt[newsub][4]*1e10/hh < bhmass * 100:
+        if Smbt[newsub][4]*1e10/hh < bhmass * 10:
             # relax distance and redo search
             for i,d in enumerate(dr):
                 if d < 100:
@@ -128,8 +142,19 @@ def process_group(pig_r, gidx):
         
         slbt[sidx - firstsub][5] -= 1
         slen[sidx - firstsub] -= 1
+        if slbt[sidx - firstsub][5] == 0:
+             # avoid small numerical residual
+            sbhmass[sidx - firstsub] = 0.
+            sbhmdot[sidx - firstsub] = 0.
+        else:
+            sbhmass[sidx - firstsub] -= bhmass/(1e10/hh)
+            sbhmdot[sidx - firstsub] -= bhmdot
+        
         slbt[i][5] += 1
         slen[i] += 1
+        sbhmass[i] += bhmass/(1e10/hh)
+        sbhmdot[i] += bhmdot
+        
 
     # this is the new order of BHs in this group
     order = np.argsort(allbh_sidx)
@@ -142,11 +167,11 @@ def process_group(pig_r, gidx):
 #     print(allbh_sidx)
 #     print(order)
     
-    return order, sobt, slbt, slen
+    return order, sobt, slbt, slen, sbhmass, sbhmdot
 
 
 def rewrite_group(pig_r, pig_w, gidx):
-    order, sobt, slbt, slen = process_group(pig_r, gidx)
+    order, sobt, slbt, slen, sbhmass, sbhmdot = process_group(pig_r, gidx)
     gstart, gend = Gobt[gidx][5], Gobt[gidx][5] + Glbt[gidx][5] # abs start, end index of BH in this group
     firstsub = FirstSub[gidx]
     
@@ -163,6 +188,9 @@ def rewrite_group(pig_r, pig_w, gidx):
     pig_w['SubGroups/SubhaloLenType'].write(firstsub, slbt)
     pig_w['SubGroups/SubhaloLen'].write(firstsub, slen)
     pig_w['SubGroups/SubhaloOffsetType'].write(firstsub, sobt)
+    pig_w['SubGroups/SubhaloBHMass'].write(firstsub, sbhmass)
+    pig_w['SubGroups/SubhaloBHMdot'].write(firstsub, sbhmdot)
+    
     
     print('done with group %d'%(gidx), flush=True)
     
@@ -175,15 +203,32 @@ if __name__ == "__main__":
 
     #-------------- Cmd line Args ------------------------------
     parser = argparse.ArgumentParser(description='subgrpID-subfind')
-    parser.add_argument('--snap',required=True,type=int,help='snapshot number to process')
+    parser.add_argument('--indir',required=True,type=str,help='path of the input file directory')
+    parser.add_argument('--outdir',required=True,type=str,help='path of the output file directory')
+    parser.add_argument('--min_bhmass1',required=True,type=float,help='reassign only if bhmass > min_bhmass')
+    parser.add_argument('--min_gal_bh_ratio1',required=True,type=float,help='reassign when mgal/mbh < min_gal_bh_ratio')
+    
+    parser.add_argument('--min_bhmass2',required=True,type=float,help='reassign only if bhmass > min_bhmass')
+    parser.add_argument('--min_gal_bh_ratio2',required=True,type=float,help='reassign when mgal/mbh < min_gal_bh_ratio')
 
     args = parser.parse_args()
-    snap = int(args.snap)
-    indir = '/hildafs/datasets/Asterix/PIG2/PIG_%03d_subfind'%(snap)
-    outdir = '/hildafs/datasets/Asterix/PIG2/PIG_%03d_test'%(snap)
+    # snap = int(args.snap)
+    indir = args.indir
+    outdir = args.outdir
     
     pig_r = BigFile(indir)
     pig_w = BigFile(outdir)
+    min_bhmass1 = args.min_bhmass1
+    min_gal_bh_ratio1 = args.min_gal_bh_ratio1
+    
+    min_bhmass2 = args.min_bhmass2
+    min_gal_bh_ratio2 = args.min_gal_bh_ratio2
+    
+    print('Input PIG:', indir, flush=True)
+    print('Output PIG:', outdir, flush=True)
+    print('Min BH Mass for reassignment: %.1e Msun'%min_bhmass2, flush=True)
+    print('Min gal/bh mass ratio for reassignment: %.1f'%min_gal_bh_ratio1, flush=True)
+    
     
     
     Gobt = pig_r['FOFGroups/OffsetByType']
@@ -218,8 +263,16 @@ if __name__ == "__main__":
     
 #---------------------------------------------------------------------------------------
     fig, ax = plt.subplots(1,2,figsize=(12,5), sharex=True, sharey=True)
-    mask1 = gal_cm5 > gal_mass/10
-    mask1 &= gal_cm5 > 2e7
+    mask1 = gal_cm5 > gal_mass / min_gal_bh_ratio1
+    mask1 &= gal_cm5 > min_bhmass1
+    
+    # group 2:
+    mask2 = (np.log10(gal_cm5) - 6.5) > (np.log10(gal_mass) - 6)/min_gal_bh_ratio2
+    mask2 &= gal_cm5 > min_bhmass2
+    mask2 &= gal_cm5 < min_bhmass1
+    
+    mask1 |= mask2
+    
     ax[0].scatter(gal_cm5, gal_mass, s=2, alpha=0.2, color=cmap(0))
     ax[0].scatter(gal_cm5[mask1], gal_mass[mask1], s=7, alpha=0.8, color=cmap(1))
     ax[0].set(xscale='log', yscale='log')
@@ -244,7 +297,7 @@ if __name__ == "__main__":
     ax[1].scatter(bhmass_list, smass_list, s=7, alpha=0.8, color=cmap(1))
     
     
-    plt.savefig('/hildafs/home/nianyic/Astrid_analysis/subfind/plot_check/mbh_mgal_snap%03d.png'%(snap))
+    plt.savefig('mbh_mgal_reassign.png')
     
     print('done!', flush=True)
     

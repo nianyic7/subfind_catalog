@@ -59,6 +59,8 @@ if __name__ == "__main__":
     dest_r  = BigFile(args.dest)
     gsize   = pig['FOFGroups/LengthByType'].size
     gstart  = int(args.gstart)
+    gend = int(args.gend)
+    
     minpart = int(args.minpart)
     blocknames = list(args.blocknames)
     if rank == 0:
@@ -73,24 +75,26 @@ if __name__ == "__main__":
     Length  = pig['FOFGroups/LengthByType']
     Offset  = pig['FOFGroups/OffsetByType']
     
-    gend = 0
+    gfinal = 0
     if rank == 0:
         LengthByType = Length[:]
         N01 = (LengthByType[:,0] + LengthByType[:,1]).astype(int)
-        gend = np.searchsorted(-N01, -minpart)
+        gfinal = np.searchsorted(-N01, -minpart)
         del LengthByType, N01
-        print('Ending Gidx for reordering: %d'%gend,flush=True)
+        print('Ending Gidx for reordering: %d'%gfinal,flush=True)
         
     comm.barrier()
         
-    gend = comm.allreduce(gend)
+    gfinal = comm.allreduce(gfinal)
     if rank == 1:
-        print('Ending Gidx for reordering: %d'%gend,flush=True)
+        print('Abs Final Gidx for reordering: %d'%gfinal,flush=True)
     comm.barrier()
     
-    if gend > int(args.gend):
-        gend = args.gend
+    # cap at minpart thresh group
 
+    if gfinal < int(gend):
+        gend = gfinal
+        
     
     # ----------- Split tasks --------------------
     Ngroups = gend - gstart
@@ -98,7 +102,7 @@ if __name__ == "__main__":
     Nproc2 = max(1,size//2)
     Nproc1 = size - Nproc2
     
-    batch1 = Ngroups//100
+    batch1 = max(1000, Ngroups//100)
     batch2 = Ngroups - batch1
     
     if rank <  Nproc1:
@@ -126,14 +130,15 @@ if __name__ == "__main__":
         Lens   = Length[istart:iend][:,p]
         Ends   = Starts + Lens
 
-        if (gstart <= 1000000) and (istart <= max(Ngroups//100,10000)):
+        if (gstart <= 1000000) and (istart <= max(Ngroups//20,300000)):
             # work on groups one by one
             for i,gidx in enumerate(np.arange(istart,iend)):
                 for block,name in blocklists[p]:
                     rewrite_group(i,name,p)
+            print('Rank %d finished all'%(rank),flush=True)
         else:
             # bundle data
-            off       = Starts - Starts[0]
+            off       = Starts - Starts[0:1]
             offset    = np.concatenate([np.ones(Lens[i]) * off[i] for i in range(iend-istart)]).astype(int)
             del off
             NewOrder  = dest_r['%d/NewIndex'%p][Starts[0]:Ends[-1]] + offset
@@ -141,17 +146,17 @@ if __name__ == "__main__":
             for block,name in blocklists[p]:
                 data      = pig[name][Starts[0]:Ends[-1]][NewOrder]
                 block.write(Starts[0],data)
-                print('Rank %d finished block %s'%(rank,name),flush=True)
+            print('Rank %d finished all'%(rank),flush=True)
             
             
-#         #---------------- copy over the smaller groups ----------------
-#         if gend < int(args.gend):
-#             if rank == size//2:
-#                 print('rank %d copying over the small groups'%rank)
-#                 rstart = Offset[gend]
-#                 for block,name in blocklists[p]:
-#                     data = pig[name][rstart[p]:]
-#                     block.write(rstart[p],data)
+        #---------------- copy over the smaller groups ----------------
+        if (gend==gfinal) and (gfinal < gsize):
+            if rank == size//2:
+                rstart = Offset[gfinal]
+                print('rank %d copying over the small groups starting at:'%rank, rstart)
+                for block,name in blocklists[p]:
+                    data = pig[name][rstart[p]:]
+                    block.write(rstart[p],data)
                 
 
 

@@ -6,21 +6,13 @@ import glob
 import argparse
 from bf_util import *
 from mpi4py import MPI
-from scipy.stats import rankdata
+# from scipy.stats import rankdata
 
-"""
-assign subgroupID to BHs
-also rewrite mbt cols using True BH mass
+# """
+# assign subgroupID to BHs
+# also rewrite mbt cols using True BH mass
 
-
-"""
-
-
-
-def place(bidxlist,suboff5):
-    sidxlist = np.searchsorted(suboff5,bidx,side='right')-1
-    return sidxlist
-
+# """
 
 
 #--------------------------------------------------------------------------
@@ -36,74 +28,125 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='subgrpID-subfind')
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--gstart',default=0,type=int,help='where to begin the rewriting')
-    parser.add_argument('--gend',default=0,type=int,help='where to finish the rewriting')
-    
 
-    
     args = parser.parse_args()
     
     #--------------------------
     dest_w  = FileMPI(comm, args.dest, create=True)
     dest_r  = BigFile(args.dest)
     gstart  = int(args.gstart)
-    gend    = int(args.gend)
+    # gend    = int(args.gend)
 
     
     comm.barrier()
     #---------- Initialize  blocks --------------
-    blockname = '5/SubgroupIdx'
+    blockname = '5-2/SubgroupIndex'
     dtype = 'i8'
-    dsize = dest_r['5/ID'].size
-    nfile = dest_r['5/ID'].Nfile
+    dsize = dest_r['5-2/ID'].size
+    nfile = dest_r['5-2/ID'].Nfile
     if gstart == 0:
-        block = dest_w.create(blockname, dtype, dsize, nfile)
+        block5 = dest_w.create(blockname, dtype, dsize, nfile)
     else:
-        block = dest_w[blockname]
+        block5 = dest_w[blockname]
     comm.barrier()
+    
+#     blockname = '4/SubgroupIndex'
+#     dtype = 'i8'
+#     dsize = dest_r['4/ID'].size
+#     nfile = dest_r['4/ID'].Nfile
+#     if gstart == 0:
+#         block4 = dest_w.create(blockname, dtype, dsize, nfile)
+#     else:
+#         block4 = dest_w[blockname]
+#     comm.barrier()
         
-
-    sLength  = dest_r['SubGroups/LengthByType']
-    sOffset  = dest_r['SubGroups/OffsetByType']
+        
     # ----------- Split tasks --------------------
-    NBHs   = Offset[gend,5]
-    istart = NBHs * rank // size
-    iend = NBHs * (rank + 1) // size
 
-    print('Rank %d starts from Group %d to Group%d'%(rank,istart,iend),flush=True)
+    gLength  = dest_r['FOFGroups/LengthByType']
+    gOffset  = dest_r['FOFGroups/OffsetByType']
+    
+    sLength  = dest_r['SubGroups/SubhaloLenType2']
+    sOffset  = dest_r['SubGroups/SubhaloOffsetType2']
+    
+    FirstSub = dest_r['FOFGroups/GroupFirstSub'][:]
+    Nsubs    = dest_r['FOFGroups/GroupNsubs']
+
+    # number of subhalos with BHs
+    NsubsTot   = sLength.size
+    FinalSub   = (sLength[:][:,5] > 0).nonzero()[0][-1] + 1
+    FinalGroup = (FirstSub >= FinalSub).nonzero()[0][0] + 1
+    
+
+    # starting and ending subgroup
+    sstart = FinalSub * rank // size
+    send   = FinalSub * (rank + 1) // size
+    
+    # starting and ending group
+    istart = ((FirstSub >= 0) & (FirstSub <= sstart)).nonzero()[0][-1]
+    iend   = (FirstSub >= send).nonzero()[0][0]
+    
+    
+
     if rank == 0:
-        print('Gstart: %d Gend: %d Total groups:'%(gstart,gend),Ngroups)
-        print('Saving dir:',args.dest,flush=True)
+        print('Sstart: %d, Total Subroups:'%sstart, FinalSub, "Total Groups:", FinalGroup)
+        print('Saving dir:', args.dest,flush=True)
+        lastBHinSub = sOffset[FinalSub][5]
+        totalBHs = dest_r['5/ID'].size
+        
+        print('Total BHs:', totalBHs, 'Last BH in Subhalo:', lastBHinSub, flush=True)
+        
+    comm.barrier()
+    print('Rank %d starts from Group %d to Group%d'%(rank,istart,iend),flush=True)
     comm.barrier()
 
-    BHidx = np.arange(istart,iend)
-    #--------------------------------------------------------------
-    p = 5
+    fsubs = FirstSub[istart : iend]
+    nsubs = Nsubs[istart : iend]
     
-    gidxlist  = dest_r['5/GroupID'][istart:iend]-1
-    gstart,gend = min(gidxlist),max(gidxlist)+1
-    FirstSub = dest_r['FOFGroups/GroupFirstSub'][gstart:gend]
+    mask  = fsubs >= 0
+    fsubs = fsubs[mask]
+    nsubs = nsubs[mask]
     
-    sstart, send = FirstSub[0], FirstSub[-1] + Nsubs[gend]
+    start, end = gOffset[istart][5], gOffset[iend][5]
+    # minus one for default subgroup index
+    sidx5 = - np.ones(end - start, dtype=np.int64)
     
-    suboff = pig2['SubGroups/SubhaloOffsetType'][sstart:send]
-    suboff5 = suboff[:,5]
-    del suboff
-
-    data = place(bidxlist,suboff5)
-    data -= FirstSub[gidxlist-gidxlist[0]]
-    print('rank %d, datal length: %d, starting point %d'%(rank,len(data),istart))
-    block.write(istart,data)
-            
+    if len(fsubs) > 0:
+        firstsub, lastsub = fsubs[0], fsubs[-1] + nsubs[-1]
+        for s in range(firstsub, lastsub):
+            sbeg, send = sOffset[s][5], sOffset[s][5] + sLength[s][5]
+            if send <= sbeg:
+                continue
+            sidx5[sbeg : send] = s
+    
+    print('rank %d writing data from %d with length %d'%(rank, start, len(sidx5)), flush=True)
+    block5.write(start, sidx5)
     print('rank %d done!'%rank,flush=True)
-    #---------------- copy over the smaller groups ----------------
+    
+    comm.barrier()
+    
+    if rank == 0:
+        print('writing the last BHs not in any subhalo...', flush=True)
+        block5.write(lastBHinSub, - np.ones(totalBHs - lastBHinSub, dtype=np.int64))
+        print('All done!', flush=True)
+        
+    
+    
 
-#     if rank == size//2:
-#         print('rank %d copying over the small groups'%rank)
-#         print('rstart:',rstart,'dsize:',dsize)
-#         rstart = Offset[gend][p]
-#         data = - np.ones(dsize-rstart,dtype='i4')
-#         block.write(rstart,data)
-                
+    #     #----------- Stars --------------------
+    #     start, end = gOffset[istart][4], gOffset[iend][4]
+    #     # minus one for default subgroup index
+    #     sidx4 = - np.ones(end - start, dtype=np.int64)
+    #     for s in range(firstsub, lastsub):
+    #         sbeg, send = sOffset[s][4], sOffset[s][4] + sLength[s][4]
+    #         if sbeg <= send:
+    #             continue
+    #         sidx4[sbeg : send] = s
+
+    #     block4.write(start, sidx4)
+
+
+        
 
 
 

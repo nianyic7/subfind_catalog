@@ -8,8 +8,6 @@ from bf_util import *
 from mpi4py import MPI
 
 
-
-
 def get_subfind_chunk(subroot):
     subdir = subroot + '/chunk*'
     
@@ -125,7 +123,7 @@ def process_chunk(c, ChunkFirstSub):
     
     FirstSubs      = np.zeros_like(NsubsChunk) + ChunkFirstSub
     FirstSubs[1:]  +=  np.cumsum(NsubsChunk[:-1])
-    FirstSubs[NsubsChunk == 0] = -1
+    # FirstSubs[NsubsChunk == 0] = -1
     
     GroupOff       = Offset[gstart:gend]
     
@@ -233,8 +231,7 @@ if __name__ == "__main__":
     parser.add_argument('--grpfile',required=True,type=str,help='name of the subfind group file')
     parser.add_argument('--dest',required=True,type=str,help='path of the output file directory')
     parser.add_argument('--cstart',default=0,type=int,help='starting chunk')
-    parser.add_argument('--minpart',default=1,type=int,help='min particle in halo to start rewriting')
-
+    parser.add_argument('--minpart',default=20,type=int,help='minimum dm + gas')
     args = parser.parse_args()
     
     #--------------------------
@@ -254,11 +251,14 @@ if __name__ == "__main__":
     Length  = pig['FOFGroups/LengthByType']
     Offset  = pig['FOFGroups/OffsetByType']
 
+
     gend = 0
     if rank == 0:
         LengthByType = Length[:]
         N01 = (LengthByType[:,0] + LengthByType[:,1]).astype(int)
+        print("Minimum 0 and 1 parts in all groups:", min(N01), flush=True)
         gend = np.searchsorted(-N01, -minpart)
+        print('Total Number of Groups:', Length.size,flush=True)
         del LengthByType, N01
         print('Ending Gidx for reordering: %d'%gend,flush=True)
         
@@ -271,8 +271,10 @@ if __name__ == "__main__":
     
     # ----------- Split tasks --------------------
     chunk_list, maxgroup_list = get_subfind_chunk(subroot)
-    cend = group_chunk_dir(gend) + 1
-    # cend = len(chunk_list)
+    if minpart <= 32:
+        cend = len(chunk_list)
+    else:
+        cend = group_chunk_dir(gend) + 1
     
     Nchunks = int(cend - cstart)
     
@@ -341,5 +343,11 @@ if __name__ == "__main__":
         process_chunk(chunk,FirstSub)
         FirstSub += NsubsChunk
         print('chunk %d done! firstsub=%d'%(chunk,FirstSub),flush=True)
+    
+    
+    if rank == 0:
+        # fill the rest GroupNsub, GroupFirstSub with 0 and -1
+        blocklists_fof[0].write(gend,-np.ones(gsize - gend, dtype=int))
+        blocklists_fof[1].write(gend,-np.zeros(gsize - gend, dtype=int))
     
     
